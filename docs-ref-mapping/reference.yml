@@ -513,7 +513,6 @@
         uid: azure.nodejs.sdk.landingPage.services.eventgrid.Client
         landingPageType: Service
         children:
-        - azure-eventgrid
         - '@azure/arm-eventgrid'
         - '@azure/eventgrid'
       - name: Management
