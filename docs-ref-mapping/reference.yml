@@ -26,6 +26,9 @@
         children:
         - azure-arm-domainservices
         - '@azure/arm-domainservices'
+    - name: Standalone Service
+      uid: azure.nodejs.sdk.landingpage.services.standalone
+      href: ~/docs-ref-services/storage-standalone.md
     - name: Advisor
       uid: azure.nodejs.sdk.landingpage.services.advisor
       href: ~/docs-ref-services/advisor.md
