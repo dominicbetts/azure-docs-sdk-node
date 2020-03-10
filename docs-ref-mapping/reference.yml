@@ -29,6 +29,10 @@
     - name: Standalone Service
       uid: azure.nodejs.sdk.landingpage.services.standalone
       href: ~/docs-ref-services/storage-standalone.md
+      items:
+      - name: Management
+        uid: azure.nodejs.sdk.landingPage.services.Advisor.Management
+        href: ~/docs-ref-services/storage-standalone-child.md
     - name: Advisor
       uid: azure.nodejs.sdk.landingpage.services.advisor
       href: ~/docs-ref-services/advisor.md
