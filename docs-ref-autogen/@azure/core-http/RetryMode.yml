@@ -17,5 +17,4 @@ items:
       - typeScript
     summary: ''
     type: field
-    numericValue: 0
     package: '@azure/core-http'

@@ -1,0 +1,961 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient'
+    name: ServiceBusAtomManagementClient
+    fullName: ServiceBusAtomManagementClient
+    children:
+      - '@azure/service-bus.ServiceBusAtomManagementClient.createQueue'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.createRule'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.createSubscription'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.createTopic'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.deleteQueue'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.deleteRule'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.deleteSubscription'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.deleteTopic'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.getQueueDetails'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.getRuleDetails'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.getSubscriptionDetails'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.getTopicDetails'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.listQueues'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.listRules'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.listSubscriptions'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.listTopics'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.sendOperationRequest'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.sendRequest'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.constructor'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.updateQueue'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.updateRule'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.updateSubscription'
+      - '@azure/service-bus.ServiceBusAtomManagementClient.updateTopic'
+    langs:
+      - typeScript
+    type: class
+    summary: >-
+      All operations return promises that resolve to an object that has the
+      relevant output.
+
+      These objects also have a property called `_response` that you can use if
+      you want to
+
+      access the direct response from the service.
+    extends:
+      name: ServiceClient
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.createQueue'
+    name: 'createQueue(string, QueueOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 'Creates a queue with given name, configured using the given options'
+    syntax:
+      content: 'function createQueue(queueName: string, queueOptions?: QueueOptions)'
+      parameters:
+        - id: queueName
+          type:
+            - string
+          description: ''
+        - id: queueOptions
+          type:
+            - '@azure/service-bus.QueueOptions'
+          description: >-
+            Options to configure the Queue being created.
+
+            For example, you can configure a queue to support partitions or
+            sessions.
+
+
+            Following are errors that can be expected from this operation
+          optional: true
+      return:
+        type:
+          - Promise<@azure/service-bus.CreateQueueResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.createRule'
+    name: 'createRule(string, string, string, RuleOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 'Creates a rule with given name, configured using the given options.'
+    syntax:
+      content: >-
+        function createRule(topicName: string, subscriptionName: string,
+        ruleName: string, ruleOptions?: RuleOptions)
+      parameters:
+        - id: topicName
+          type:
+            - string
+          description: ''
+        - id: subscriptionName
+          type:
+            - string
+          description: ''
+        - id: ruleName
+          type:
+            - string
+          description: ''
+        - id: ruleOptions
+          type:
+            - '@azure/service-bus.RuleOptions'
+          description: |-
+
+
+            Following are errors that can be expected from this operation
+          optional: true
+      return:
+        type:
+          - Promise<@azure/service-bus.CreateRuleResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.createSubscription'
+    name: 'createSubscription(string, string, SubscriptionOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 'Creates a subscription with given name, configured using the given options'
+    syntax:
+      content: >-
+        function createSubscription(topicName: string, subscriptionName: string,
+        subscriptionOptions?: SubscriptionOptions)
+      parameters:
+        - id: topicName
+          type:
+            - string
+          description: ''
+        - id: subscriptionName
+          type:
+            - string
+          description: ''
+        - id: subscriptionOptions
+          type:
+            - '@azure/service-bus.SubscriptionOptions'
+          description: >-
+            Options to configure the Subscription being created.
+
+            For example, you can configure a Subscription to support partitions
+            or sessions.
+
+
+            Following are errors that can be expected from this operation
+          optional: true
+      return:
+        type:
+          - Promise<@azure/service-bus.CreateSubscriptionResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.createTopic'
+    name: 'createTopic(string, TopicOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: 'Creates a topic with given name, configured using the given options'
+    syntax:
+      content: 'function createTopic(topicName: string, topicOptions?: TopicOptions)'
+      parameters:
+        - id: topicName
+          type:
+            - string
+          description: ''
+        - id: topicOptions
+          type:
+            - '@azure/service-bus.TopicOptions'
+          description: >-
+            Options to configure the Topic being created.
+
+            For example, you can configure a topic to support partitions or
+            sessions.
+
+
+            Following are errors that can be expected from this operation
+          optional: true
+      return:
+        type:
+          - Promise<@azure/service-bus.CreateTopicResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.deleteQueue'
+    name: deleteQueue(string)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a queue.
+    syntax:
+      content: 'function deleteQueue(queueName: string)'
+      parameters:
+        - id: queueName
+          type:
+            - string
+          description: |-
+
+
+            Following are errors that can be expected from this operation
+      return:
+        type:
+          - Promise<@azure/service-bus.DeleteQueueResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.deleteRule'
+    name: 'deleteRule(string, string, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a rule.
+    syntax:
+      content: >-
+        function deleteRule(topicName: string, subscriptionName: string,
+        ruleName: string)
+      parameters:
+        - id: topicName
+          type:
+            - string
+          description: ''
+        - id: subscriptionName
+          type:
+            - string
+          description: ''
+        - id: ruleName
+          type:
+            - string
+          description: |-
+
+
+            Following are errors that can be expected from this operation
+      return:
+        type:
+          - Promise<@azure/service-bus.DeleteRuleResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.deleteSubscription'
+    name: 'deleteSubscription(string, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a subscription.
+    syntax:
+      content: 'function deleteSubscription(topicName: string, subscriptionName: string)'
+      parameters:
+        - id: topicName
+          type:
+            - string
+          description: ''
+        - id: subscriptionName
+          type:
+            - string
+          description: |-
+
+
+            Following are errors that can be expected from this operation
+      return:
+        type:
+          - Promise<@azure/service-bus.DeleteSubscriptionResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.deleteTopic'
+    name: deleteTopic(string)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a topic.
+    syntax:
+      content: 'function deleteTopic(topicName: string)'
+      parameters:
+        - id: topicName
+          type:
+            - string
+          description: |-
+
+
+            Following are errors that can be expected from this operation
+      return:
+        type:
+          - Promise<@azure/service-bus.DeleteTopicResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.getQueueDetails'
+    name: getQueueDetails(string)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Returns an object representing the Queue with the given name along with
+      all its properties
+    syntax:
+      content: 'function getQueueDetails(queueName: string)'
+      parameters:
+        - id: queueName
+          type:
+            - string
+          description: |-
+
+
+            Following are errors that can be expected from this operation
+      return:
+        type:
+          - Promise<@azure/service-bus.GetQueueResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.getRuleDetails'
+    name: 'getRuleDetails(string, string, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Returns an object representing the Rule with the given name along with all
+      its properties.
+    syntax:
+      content: >-
+        function getRuleDetails(topicName: string, subscriptioName: string,
+        ruleName: string)
+      parameters:
+        - id: topicName
+          type:
+            - string
+          description: ''
+        - id: subscriptioName
+          type:
+            - string
+          description: ''
+        - id: ruleName
+          type:
+            - string
+          description: |-
+
+
+            Following are errors that can be expected from this operation
+      return:
+        type:
+          - Promise<@azure/service-bus.GetRuleResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.getSubscriptionDetails'
+    name: 'getSubscriptionDetails(string, string)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Returns an object representing the Subscription with the given name along
+      with all its properties
+    syntax:
+      content: >-
+        function getSubscriptionDetails(topicName: string, subscriptionName:
+        string)
+      parameters:
+        - id: topicName
+          type:
+            - string
+          description: ''
+        - id: subscriptionName
+          type:
+            - string
+          description: |-
+
+
+            Following are errors that can be expected from this operation
+      return:
+        type:
+          - Promise<@azure/service-bus.GetSubscriptionResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.getTopicDetails'
+    name: getTopicDetails(string)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Returns an object representing the Topic with the given name along with
+      all its properties
+    syntax:
+      content: 'function getTopicDetails(topicName: string)'
+      parameters:
+        - id: topicName
+          type:
+            - string
+          description: |-
+
+
+            Following are errors that can be expected from this operation
+      return:
+        type:
+          - Promise<@azure/service-bus.GetTopicResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.listQueues'
+    name: listQueues(ListRequestOptions)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists existing queues.
+    syntax:
+      content: 'function listQueues(listRequestOptions?: ListRequestOptions)'
+      parameters:
+        - id: listRequestOptions
+          type:
+            - '@azure/service-bus.ListRequestOptions'
+          description: |-
+
+
+            Following are errors that can be expected from this operation
+          optional: true
+      return:
+        type:
+          - Promise<@azure/service-bus.ListQueuesResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.listRules'
+    name: 'listRules(string, string, ListRequestOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists existing rules.
+    syntax:
+      content: >-
+        function listRules(topicName: string, subscriptionName: string,
+        listRequestOptions?: ListRequestOptions)
+      parameters:
+        - id: topicName
+          type:
+            - string
+          description: ''
+        - id: subscriptionName
+          type:
+            - string
+          description: ''
+        - id: listRequestOptions
+          type:
+            - '@azure/service-bus.ListRequestOptions'
+          description: |-
+
+
+            Following are errors that can be expected from this operation
+          optional: true
+      return:
+        type:
+          - Promise<@azure/service-bus.ListRulesResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.listSubscriptions'
+    name: 'listSubscriptions(string, ListRequestOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists existing subscriptions.
+    syntax:
+      content: >-
+        function listSubscriptions(topicName: string, listRequestOptions?:
+        ListRequestOptions)
+      parameters:
+        - id: topicName
+          type:
+            - string
+          description: ''
+        - id: listRequestOptions
+          type:
+            - '@azure/service-bus.ListRequestOptions'
+          description: |-
+
+
+            Following are errors that can be expected from this operation
+          optional: true
+      return:
+        type:
+          - Promise<@azure/service-bus.ListSubscriptionsResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.listTopics'
+    name: listTopics(ListRequestOptions)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists existing topics.
+    syntax:
+      content: 'function listTopics(listRequestOptions?: ListRequestOptions)'
+      parameters:
+        - id: listRequestOptions
+          type:
+            - '@azure/service-bus.ListRequestOptions'
+          description: |-
+
+
+            Following are errors that can be expected from this operation
+          optional: true
+      return:
+        type:
+          - Promise<@azure/service-bus.ListTopicsResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.sendOperationRequest'
+    name: >-
+      sendOperationRequest(OperationArguments, OperationSpec,
+      ServiceCallback<any>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Send an HTTP request that is populated using the provided OperationSpec.
+    syntax:
+      content: >-
+        function sendOperationRequest(operationArguments: OperationArguments,
+        operationSpec: OperationSpec, callback?: ServiceCallback<any>)
+      parameters:
+        - id: operationArguments
+          type:
+            - OperationArguments
+          description: >-
+            The arguments that the HTTP request's templated values will be
+            populated from.
+        - id: operationSpec
+          type:
+            - OperationSpec
+          description: The OperationSpec to use to populate the httpRequest.
+        - id: callback
+          type:
+            - ServiceCallback<any>
+          description: |
+            The callback to call when the response is received.
+          optional: true
+      return:
+        type:
+          - Promise<RestResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.sendRequest'
+    name: sendRequest(RequestPrepareOptions | WebResource)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Send the provided httpRequest.
+    syntax:
+      content: 'function sendRequest(options: RequestPrepareOptions | WebResource)'
+      parameters:
+        - id: options
+          type:
+            - RequestPrepareOptions | WebResource
+          description: ''
+      return:
+        type:
+          - Promise<HttpOperationResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.constructor'
+    name: >-
+      ServiceBusAtomManagementClient(string,
+      ServiceBusAtomManagementClientOptions)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: Initializes a new instance of the ServiceBusManagementClient class.
+    syntax:
+      content: >-
+        new ServiceBusAtomManagementClient(connectionString: string, options?:
+        ServiceBusAtomManagementClientOptions)
+      parameters:
+        - id: connectionString
+          type:
+            - string
+          description: The connection string needed for the client to connect to Azure.
+        - id: options
+          type:
+            - '@azure/service-bus.ServiceBusAtomManagementClientOptions'
+          description: |
+            ServiceBusAtomManagementClientOptions
+          optional: true
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.updateQueue'
+    name: 'updateQueue(string, QueueOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Updates properties on the Queue by the given name based on the given
+      options
+    syntax:
+      content: 'function updateQueue(queueName: string, queueOptions: QueueOptions)'
+      parameters:
+        - id: queueName
+          type:
+            - string
+          description: ''
+        - id: queueOptions
+          type:
+            - '@azure/service-bus.QueueOptions'
+          description: >-
+            Options to configure the Queue being updated.
+
+            For example, you can configure a queue to support partitions or
+            sessions.
+
+
+            Following are errors that can be expected from this operation
+      return:
+        type:
+          - Promise<@azure/service-bus.UpdateQueueResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.updateRule'
+    name: 'updateRule(string, string, string, RuleOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Updates properties on the Rule by the given name based on the given
+      options.
+    syntax:
+      content: >-
+        function updateRule(topicName: string, subscriptionName: string,
+        ruleName: string, ruleOptions: RuleOptions)
+      parameters:
+        - id: topicName
+          type:
+            - string
+          description: ''
+        - id: subscriptionName
+          type:
+            - string
+          description: ''
+        - id: ruleName
+          type:
+            - string
+          description: ''
+        - id: ruleOptions
+          type:
+            - '@azure/service-bus.RuleOptions'
+          description: >-
+            Options to configure the Rule being updated.
+
+            For example, you can configure the filter to apply on associated
+            Topic/Subscription.
+
+
+            Following are errors that can be expected from this operation
+      return:
+        type:
+          - Promise<@azure/service-bus.UpdateRuleResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.updateSubscription'
+    name: 'updateSubscription(string, string, SubscriptionOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Updates properties on the Subscription by the given name based on the
+      given options
+    syntax:
+      content: >-
+        function updateSubscription(topicName: string, subscriptionName: string,
+        subscriptionOptions: SubscriptionOptions)
+      parameters:
+        - id: topicName
+          type:
+            - string
+          description: ''
+        - id: subscriptionName
+          type:
+            - string
+          description: ''
+        - id: subscriptionOptions
+          type:
+            - '@azure/service-bus.SubscriptionOptions'
+          description: >-
+            Options to configure the Subscription being updated.
+
+            For example, you can configure a Subscription to support partitions
+            or sessions.
+
+
+            Following are errors that can be expected from this operation
+      return:
+        type:
+          - Promise<@azure/service-bus.UpdateSubscriptionResponse>
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient.updateTopic'
+    name: 'updateTopic(string, TopicOptions)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Updates properties on the Topic by the given name based on the given
+      options
+    syntax:
+      content: 'function updateTopic(topicName: string, topicOptions: TopicOptions)'
+      parameters:
+        - id: topicName
+          type:
+            - string
+          description: ''
+        - id: topicOptions
+          type:
+            - '@azure/service-bus.TopicOptions'
+          description: >-
+            Options to configure the Topic being updated.
+
+            For example, you can configure a topic to support partitions or
+            sessions.
+
+
+            Following are errors that can be expected from this operation
+      return:
+        type:
+          - Promise<@azure/service-bus.UpdateTopicResponse>
+        description: ''
+    package: '@azure/service-bus'
+references:
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClientOptions'
+    name: ServiceBusAtomManagementClientOptions
+    spec.typeScript:
+      - name: ServiceBusAtomManagementClientOptions
+        fullName: ServiceBusAtomManagementClientOptions
+        uid: '@azure/service-bus.ServiceBusAtomManagementClientOptions'
+  - uid: '@azure/service-bus.QueueOptions'
+    name: QueueOptions
+    spec.typeScript:
+      - name: QueueOptions
+        fullName: QueueOptions
+        uid: '@azure/service-bus.QueueOptions'
+  - uid: Promise<@azure/service-bus.CreateQueueResponse>
+    name: CreateQueueResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: CreateQueueResponse
+        fullName: CreateQueueResponse
+        uid: '@azure/service-bus.CreateQueueResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/service-bus.RuleOptions'
+    name: RuleOptions
+    spec.typeScript:
+      - name: RuleOptions
+        fullName: RuleOptions
+        uid: '@azure/service-bus.RuleOptions'
+  - uid: Promise<@azure/service-bus.CreateRuleResponse>
+    name: CreateRuleResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: CreateRuleResponse
+        fullName: CreateRuleResponse
+        uid: '@azure/service-bus.CreateRuleResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/service-bus.SubscriptionOptions'
+    name: SubscriptionOptions
+    spec.typeScript:
+      - name: SubscriptionOptions
+        fullName: SubscriptionOptions
+        uid: '@azure/service-bus.SubscriptionOptions'
+  - uid: Promise<@azure/service-bus.CreateSubscriptionResponse>
+    name: CreateSubscriptionResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: CreateSubscriptionResponse
+        fullName: CreateSubscriptionResponse
+        uid: '@azure/service-bus.CreateSubscriptionResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/service-bus.TopicOptions'
+    name: TopicOptions
+    spec.typeScript:
+      - name: TopicOptions
+        fullName: TopicOptions
+        uid: '@azure/service-bus.TopicOptions'
+  - uid: Promise<@azure/service-bus.CreateTopicResponse>
+    name: CreateTopicResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: CreateTopicResponse
+        fullName: CreateTopicResponse
+        uid: '@azure/service-bus.CreateTopicResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<@azure/service-bus.DeleteQueueResponse>
+    name: DeleteQueueResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: DeleteQueueResponse
+        fullName: DeleteQueueResponse
+        uid: '@azure/service-bus.DeleteQueueResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<@azure/service-bus.DeleteRuleResponse>
+    name: DeleteRuleResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: DeleteRuleResponse
+        fullName: DeleteRuleResponse
+        uid: '@azure/service-bus.DeleteRuleResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<@azure/service-bus.DeleteSubscriptionResponse>
+    name: DeleteSubscriptionResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: DeleteSubscriptionResponse
+        fullName: DeleteSubscriptionResponse
+        uid: '@azure/service-bus.DeleteSubscriptionResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<@azure/service-bus.DeleteTopicResponse>
+    name: DeleteTopicResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: DeleteTopicResponse
+        fullName: DeleteTopicResponse
+        uid: '@azure/service-bus.DeleteTopicResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<@azure/service-bus.GetQueueResponse>
+    name: GetQueueResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: GetQueueResponse
+        fullName: GetQueueResponse
+        uid: '@azure/service-bus.GetQueueResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<@azure/service-bus.GetRuleResponse>
+    name: GetRuleResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: GetRuleResponse
+        fullName: GetRuleResponse
+        uid: '@azure/service-bus.GetRuleResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<@azure/service-bus.GetSubscriptionResponse>
+    name: GetSubscriptionResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: GetSubscriptionResponse
+        fullName: GetSubscriptionResponse
+        uid: '@azure/service-bus.GetSubscriptionResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<@azure/service-bus.GetTopicResponse>
+    name: GetTopicResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: GetTopicResponse
+        fullName: GetTopicResponse
+        uid: '@azure/service-bus.GetTopicResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: '@azure/service-bus.ListRequestOptions'
+    name: ListRequestOptions
+    spec.typeScript:
+      - name: ListRequestOptions
+        fullName: ListRequestOptions
+        uid: '@azure/service-bus.ListRequestOptions'
+  - uid: Promise<@azure/service-bus.ListQueuesResponse>
+    name: ListQueuesResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ListQueuesResponse
+        fullName: ListQueuesResponse
+        uid: '@azure/service-bus.ListQueuesResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<@azure/service-bus.ListRulesResponse>
+    name: ListRulesResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ListRulesResponse
+        fullName: ListRulesResponse
+        uid: '@azure/service-bus.ListRulesResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<@azure/service-bus.ListSubscriptionsResponse>
+    name: ListSubscriptionsResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ListSubscriptionsResponse
+        fullName: ListSubscriptionsResponse
+        uid: '@azure/service-bus.ListSubscriptionsResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<@azure/service-bus.ListTopicsResponse>
+    name: ListTopicsResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ListTopicsResponse
+        fullName: ListTopicsResponse
+        uid: '@azure/service-bus.ListTopicsResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<@azure/service-bus.UpdateQueueResponse>
+    name: UpdateQueueResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: UpdateQueueResponse
+        fullName: UpdateQueueResponse
+        uid: '@azure/service-bus.UpdateQueueResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<@azure/service-bus.UpdateRuleResponse>
+    name: UpdateRuleResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: UpdateRuleResponse
+        fullName: UpdateRuleResponse
+        uid: '@azure/service-bus.UpdateRuleResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<@azure/service-bus.UpdateSubscriptionResponse>
+    name: UpdateSubscriptionResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: UpdateSubscriptionResponse
+        fullName: UpdateSubscriptionResponse
+        uid: '@azure/service-bus.UpdateSubscriptionResponse'
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<@azure/service-bus.UpdateTopicResponse>
+    name: UpdateTopicResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: UpdateTopicResponse
+        fullName: UpdateTopicResponse
+        uid: '@azure/service-bus.UpdateTopicResponse'
+      - name: '>'
+        fullName: '>'

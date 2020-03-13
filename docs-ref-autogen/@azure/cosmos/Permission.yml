@@ -43,9 +43,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 'The id of the given <xref:Permission>.'
     syntax:
-      content: 'id: string'
+      content: 'public id: string'
       return:
         type:
           - string
@@ -121,9 +121,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 'The parent <xref:User>.'
     syntax:
-      content: 'user: User'
+      content: 'public user: User'
       return:
         type:
           - '@azure/cosmos.User'

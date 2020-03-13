@@ -21,9 +21,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 'The parent <xref:CosmosClient> for the Database Account.'
     syntax:
-      content: 'client: CosmosClient'
+      content: 'public client: CosmosClient'
       return:
         type:
           - '@azure/cosmos.CosmosClient'
@@ -36,9 +36,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 'The id of the given <xref:Offer>.'
     syntax:
-      content: 'id: string'
+      content: 'public id: string'
       return:
         type:
           - string

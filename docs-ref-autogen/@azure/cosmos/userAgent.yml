@@ -1,0 +1,17 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/cosmos.userAgent'
+    name: userAgent()
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function userAgent()
+      parameters: []
+      return:
+        type:
+          - string
+        description: ''
+    package: '@azure/cosmos'

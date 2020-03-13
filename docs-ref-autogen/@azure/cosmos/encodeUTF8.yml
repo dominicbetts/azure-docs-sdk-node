@@ -1,0 +1,21 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/cosmos.encodeUTF8'
+    name: encodeUTF8(string)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function encodeUTF8(str: string)'
+      parameters:
+        - id: str
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - Uint8Array
+        description: ''
+    package: '@azure/cosmos'

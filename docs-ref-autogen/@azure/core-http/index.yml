@@ -15,6 +15,7 @@ items:
       - '@azure/core-http.TopicCredentials'
       - '@azure/core-http.FetchHttpClient'
       - '@azure/core-http.ReportTransform'
+      - '@azure/core-http.CommonRequestInfo'
       - '@azure/core-http.parseHeaders'
       - '@azure/core-http.HttpClient'
       - '@azure/core-http.HttpHeaders'
@@ -90,7 +91,6 @@ items:
       - '@azure/core-http.RetryError'
       - '@azure/core-http.systemErrorRetryPolicy'
       - '@azure/core-http.ThrottlingRetryPolicy'
-      - '@azure/core-http.ResponseHandler'
       - '@azure/core-http.throttlingRetryPolicy'
       - '@azure/core-http.TracingPolicy'
       - '@azure/core-http.TracingPolicyOptions'
@@ -137,8 +137,6 @@ items:
       - '@azure/core-http.URLQuery'
       - '@azure/core-http.URLToken'
       - '@azure/core-http.URLTokenizer'
-      - '@azure/core-http.URLTokenType'
-      - '@azure/core-http.URLTokenizerState'
       - '@azure/core-http.isAlphaNumericCharacter'
       - '@azure/core-http.decodeString'
       - '@azure/core-http.encodeByteArray'
@@ -146,6 +144,8 @@ items:
       - '@azure/core-http.decodeString'
       - '@azure/core-http.encodeByteArray'
       - '@azure/core-http.encodeString'
+      - '@azure/core-http.Sanitizer'
+      - '@azure/core-http.SanitizerOptions'
       - '@azure/core-http.ServiceCallback'
       - '@azure/core-http.applyMixins'
       - '@azure/core-http.delay'
@@ -201,6 +201,8 @@ references:
     name: FetchHttpClient
   - uid: '@azure/core-http.ReportTransform'
     name: ReportTransform
+  - uid: '@azure/core-http.CommonRequestInfo'
+    name: CommonRequestInfo
   - uid: '@azure/core-http.parseHeaders'
     name: parseHeaders(Headers)
   - uid: '@azure/core-http.HttpClient'
@@ -351,8 +353,6 @@ references:
     name: 'systemErrorRetryPolicy(number, number, number, number)'
   - uid: '@azure/core-http.ThrottlingRetryPolicy'
     name: ThrottlingRetryPolicy
-  - uid: '@azure/core-http.ResponseHandler'
-    name: ResponseHandler
   - uid: '@azure/core-http.throttlingRetryPolicy'
     name: throttlingRetryPolicy()
   - uid: '@azure/core-http.TracingPolicy'
@@ -449,10 +449,6 @@ references:
     name: URLToken
   - uid: '@azure/core-http.URLTokenizer'
     name: URLTokenizer
-  - uid: '@azure/core-http.URLTokenType'
-    name: URLTokenType
-  - uid: '@azure/core-http.URLTokenizerState'
-    name: URLTokenizerState
   - uid: '@azure/core-http.isAlphaNumericCharacter'
     name: isAlphaNumericCharacter(string)
   - uid: '@azure/core-http.decodeString'
@@ -467,6 +463,10 @@ references:
     name: encodeByteArray(Uint8Array)
   - uid: '@azure/core-http.encodeString'
     name: encodeString(string)
+  - uid: '@azure/core-http.Sanitizer'
+    name: Sanitizer
+  - uid: '@azure/core-http.SanitizerOptions'
+    name: SanitizerOptions
   - uid: '@azure/core-http.ServiceCallback'
     name: ServiceCallback
   - uid: '@azure/core-http.applyMixins'

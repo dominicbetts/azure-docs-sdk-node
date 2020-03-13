@@ -11,6 +11,7 @@ items:
       - '@azure/cosmos.CosmosClientOptions.endpoint'
       - '@azure/cosmos.CosmosClientOptions.key'
       - '@azure/cosmos.CosmosClientOptions.permissionFeed'
+      - '@azure/cosmos.CosmosClientOptions.plugins'
       - '@azure/cosmos.CosmosClientOptions.resourceTokens'
       - '@azure/cosmos.CosmosClientOptions.tokenProvider'
       - '@azure/cosmos.CosmosClientOptions.userAgentSuffix'
@@ -87,10 +88,10 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'defaultHeaders?: CosmosHeaders_2'
+      content: 'defaultHeaders?: CosmosHeaders'
       return:
         type:
-          - '@azure/cosmos.CosmosHeaders_2'
+          - '@azure/cosmos.CosmosHeaders'
         description: ''
     package: '@azure/cosmos'
   - uid: '@azure/cosmos.CosmosClientOptions.endpoint'
@@ -138,6 +139,22 @@ items:
       return:
         type:
           - '@azure/cosmos.PermissionDefinition[]'
+        description: ''
+    package: '@azure/cosmos'
+  - uid: '@azure/cosmos.CosmosClientOptions.plugins'
+    name: plugins
+    fullName: plugins
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'plugins?: PluginConfig[]'
+      return:
+        type:
+          - 'PluginConfig[]'
         description: ''
     package: '@azure/cosmos'
   - uid: '@azure/cosmos.CosmosClientOptions.resourceTokens'
@@ -207,12 +224,12 @@ references:
       - name: ConnectionPolicy
         fullName: ConnectionPolicy
         uid: '@azure/cosmos.ConnectionPolicy'
-  - uid: '@azure/cosmos.CosmosHeaders_2'
-    name: CosmosHeaders_2
+  - uid: '@azure/cosmos.CosmosHeaders'
+    name: CosmosHeaders
     spec.typeScript:
-      - name: CosmosHeaders_2
-        fullName: CosmosHeaders_2
-        uid: '@azure/cosmos.CosmosHeaders_2'
+      - name: CosmosHeaders
+        fullName: CosmosHeaders
+        uid: '@azure/cosmos.CosmosHeaders'
   - uid: '@azure/cosmos.PermissionDefinition[]'
     name: 'PermissionDefinition[]'
     spec.typeScript:

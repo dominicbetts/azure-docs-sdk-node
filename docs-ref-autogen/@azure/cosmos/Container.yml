@@ -74,9 +74,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 'The parent <xref:Database>.'
     syntax:
-      content: 'database: Database'
+      content: 'public database: Database'
       return:
         type:
           - '@azure/cosmos.Database'
@@ -148,9 +148,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The id of the given container.
     syntax:
-      content: 'id: string'
+      content: 'public id: string'
       return:
         type:
           - string

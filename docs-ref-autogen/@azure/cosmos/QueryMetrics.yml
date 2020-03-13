@@ -57,7 +57,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'clientSideMetrics: ClientSideMetrics'
+      content: 'public clientSideMetrics: ClientSideMetrics'
       return:
         type:
           - '@azure/cosmos.ClientSideMetrics'
@@ -121,7 +121,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'documentLoadTime: TimeSpan'
+      content: 'public documentLoadTime: TimeSpan'
       return:
         type:
           - TimeSpan
@@ -136,7 +136,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'documentWriteTime: TimeSpan'
+      content: 'public documentWriteTime: TimeSpan'
       return:
         type:
           - TimeSpan
@@ -151,7 +151,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'indexHitDocumentCount: number'
+      content: 'public indexHitDocumentCount: number'
       return:
         type:
           - number
@@ -166,7 +166,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'indexLookupTime: TimeSpan'
+      content: 'public indexLookupTime: TimeSpan'
       return:
         type:
           - TimeSpan
@@ -181,7 +181,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'outputDocumentCount: number'
+      content: 'public outputDocumentCount: number'
       return:
         type:
           - number
@@ -196,7 +196,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'outputDocumentSize: number'
+      content: 'public outputDocumentSize: number'
       return:
         type:
           - number
@@ -284,7 +284,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'queryPreparationTimes: QueryPreparationTimes'
+      content: 'public queryPreparationTimes: QueryPreparationTimes'
       return:
         type:
           - '@azure/cosmos.QueryPreparationTimes'
@@ -299,7 +299,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'retrievedDocumentCount: number'
+      content: 'public retrievedDocumentCount: number'
       return:
         type:
           - number
@@ -314,7 +314,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'retrievedDocumentSize: number'
+      content: 'public retrievedDocumentSize: number'
       return:
         type:
           - number
@@ -329,7 +329,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'runtimeExecutionTimes: RuntimeExecutionTimes'
+      content: 'public runtimeExecutionTimes: RuntimeExecutionTimes'
       return:
         type:
           - '@azure/cosmos.RuntimeExecutionTimes'
@@ -344,7 +344,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'totalQueryExecutionTime: TimeSpan'
+      content: 'public totalQueryExecutionTime: TimeSpan'
       return:
         type:
           - TimeSpan
@@ -359,7 +359,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'vmExecutionTime: TimeSpan'
+      content: 'public vmExecutionTime: TimeSpan'
       return:
         type:
           - TimeSpan
@@ -374,7 +374,22 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'static zero: QueryMetrics'
+      content: |-
+        public static zero: QueryMetrics = new QueryMetrics(
+            0,
+            0,
+            0,
+            0,
+            0,
+            TimeSpan.zero,
+            QueryPreparationTimes.zero,
+            TimeSpan.zero,
+            TimeSpan.zero,
+            TimeSpan.zero,
+            RuntimeExecutionTimes.zero,
+            TimeSpan.zero,
+            ClientSideMetrics.zero
+          )
       return:
         type:
           - '@azure/cosmos.QueryMetrics'

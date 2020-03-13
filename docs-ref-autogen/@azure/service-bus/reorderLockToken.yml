@@ -1,0 +1,21 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.reorderLockToken'
+    name: reorderLockToken(Buffer)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function reorderLockToken(lockTokenBytes: Buffer)'
+      parameters:
+        - id: lockTokenBytes
+          type:
+            - Buffer
+          description: ''
+      return:
+        type:
+          - Buffer
+        description: Buffer - Buffer representing reordered bytes.
+    package: '@azure/service-bus'

@@ -56,10 +56,10 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'headers: CosmosHeaders_2'
+      content: 'public headers: CosmosHeaders'
       return:
         type:
-          - '@azure/cosmos.CosmosHeaders_2'
+          - '@azure/cosmos.CosmosHeaders'
         description: ''
     package: '@azure/cosmos'
   - uid: '@azure/cosmos.ResourceResponse.requestCharge'
@@ -86,14 +86,14 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'resource: TResource'
+      content: 'public resource: TResource'
       return:
         type:
           - TResource
         description: ''
     package: '@azure/cosmos'
   - uid: '@azure/cosmos.ResourceResponse.constructor'
-    name: 'ResourceResponse(TResource, CosmosHeaders_2, StatusCode, SubStatusCode)'
+    name: 'ResourceResponse(TResource, CosmosHeaders, StatusCode, SubStatusCode)'
     children: []
     type: constructor
     langs:
@@ -101,7 +101,7 @@ items:
     summary: ''
     syntax:
       content: >-
-        new ResourceResponse(resource: TResource, headers: CosmosHeaders_2,
+        new ResourceResponse(resource: TResource, headers: CosmosHeaders,
         statusCode: StatusCode, substatus?: SubStatusCode)
       parameters:
         - id: resource
@@ -110,7 +110,7 @@ items:
           description: ''
         - id: headers
           type:
-            - '@azure/cosmos.CosmosHeaders_2'
+            - '@azure/cosmos.CosmosHeaders'
           description: ''
         - id: statusCode
           type:
@@ -131,7 +131,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'statusCode: StatusCode'
+      content: 'public statusCode: StatusCode'
       return:
         type:
           - StatusCode
@@ -147,19 +147,19 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'substatus?: SubStatusCode'
+      content: 'public substatus?: SubStatusCode'
       return:
         type:
           - '@azure/cosmos.SubStatusCode'
         description: ''
     package: '@azure/cosmos'
 references:
-  - uid: '@azure/cosmos.CosmosHeaders_2'
-    name: CosmosHeaders_2
+  - uid: '@azure/cosmos.CosmosHeaders'
+    name: CosmosHeaders
     spec.typeScript:
-      - name: CosmosHeaders_2
-        fullName: CosmosHeaders_2
-        uid: '@azure/cosmos.CosmosHeaders_2'
+      - name: CosmosHeaders
+        fullName: CosmosHeaders
+        uid: '@azure/cosmos.CosmosHeaders'
   - uid: '@azure/cosmos.SubStatusCode'
     name: SubStatusCode
     spec.typeScript:

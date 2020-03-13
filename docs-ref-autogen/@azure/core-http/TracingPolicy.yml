@@ -8,13 +8,12 @@ items:
       - typeScript
     summary: ''
     syntax:
-      content: 'function tracingPolicy(tracingOptions?: TracingPolicyOptions)'
+      content: 'function tracingPolicy(tracingOptions: TracingPolicyOptions)'
       parameters:
         - id: tracingOptions
           type:
             - '@azure/core-http.TracingPolicyOptions'
           description: ''
-          optional: true
       return:
         type:
           - '@azure/core-http.RequestPolicyFactory'

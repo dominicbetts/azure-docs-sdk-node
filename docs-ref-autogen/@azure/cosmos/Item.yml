@@ -23,9 +23,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 'The parent <xref:Container>.'
     syntax:
-      content: 'container: Container'
+      content: 'public container: Container'
       return:
         type:
           - '@azure/cosmos.Container'
@@ -45,14 +45,13 @@ items:
       You may get more or less properties and it's up to your logic to enforce
       it.
     syntax:
-      content: 'function delete<T>(options?: RequestOptions)'
+      content: 'function delete<T>(options: RequestOptions)'
       parameters:
         - id: options
           type:
             - '@azure/cosmos.RequestOptions'
           description: |
             Additional options for the request, such as the partition key.
-          optional: true
       return:
         type:
           - Promise<@azure/cosmos.ItemResponse<T>>
@@ -65,9 +64,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 'The id of the given <xref:Item>.'
     syntax:
-      content: 'id: string'
+      content: 'public id: string'
       return:
         type:
           - string
@@ -96,7 +95,7 @@ items:
       There is no set schema for JSON items. They may contain any number of
       custom properties.
     syntax:
-      content: 'function read<T>(options?: RequestOptions)'
+      content: 'function read<T>(options: RequestOptions)'
       parameters:
         - id: options
           type:
@@ -106,7 +105,6 @@ items:
 
             Note, if you provide a partition key on the options object, it will
             override the primary key on `this.partitionKey`.
-          optional: true
       return:
         type:
           - Promise<@azure/cosmos.ItemResponse<T>>

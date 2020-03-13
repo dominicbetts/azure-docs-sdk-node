@@ -61,7 +61,7 @@ items:
     type: property
     summary: Gets the number of items returned in the response from Azure Cosmos DB
     syntax:
-      content: 'count: number'
+      content: 'public count: number'
       return:
         type:
           - number
@@ -104,7 +104,7 @@ items:
     type: property
     summary: Response headers of the response from Azure Cosmos DB
     syntax:
-      content: 'headers: CosmosHeaders'
+      content: 'public headers: CosmosHeaders'
       return:
         type:
           - '@azure/cosmos.CosmosHeaders'
@@ -134,7 +134,7 @@ items:
     type: property
     summary: Gets the items returned in the response from Azure Cosmos DB
     syntax:
-      content: 'result: T'
+      content: 'public result: T'
       return:
         type:
           - T
@@ -166,7 +166,7 @@ items:
     type: property
     summary: Gets the status code of the response from Azure Cosmos DB
     syntax:
-      content: 'statusCode: number'
+      content: 'public statusCode: number'
       return:
         type:
           - number

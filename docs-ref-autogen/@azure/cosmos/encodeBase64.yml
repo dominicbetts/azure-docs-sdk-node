@@ -1,0 +1,21 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/cosmos.encodeBase64'
+    name: encodeBase64(ArrayBuffer)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function encodeBase64(value: ArrayBuffer)'
+      parameters:
+        - id: value
+          type:
+            - ArrayBuffer
+          description: ''
+      return:
+        type:
+          - string
+        description: ''
+    package: '@azure/cosmos'

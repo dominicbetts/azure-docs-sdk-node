@@ -96,7 +96,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'hasMoreResults: boolean'
+      content: 'public hasMoreResults: boolean'
       return:
         type:
           - boolean
@@ -141,7 +141,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'resources: TResource[]'
+      content: 'public resources: TResource[]'
       return:
         type:
           - 'TResource[]'

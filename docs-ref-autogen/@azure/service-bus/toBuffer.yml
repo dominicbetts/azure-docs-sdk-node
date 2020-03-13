@@ -1,0 +1,22 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.toBuffer'
+    name: toBuffer(any)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function toBuffer(input: any)'
+      parameters:
+        - id: input
+          type:
+            - any
+          description: |
+            The input that needs to be converted to a Buffer.
+      return:
+        type:
+          - Buffer
+        description: ''
+    package: '@azure/service-bus'

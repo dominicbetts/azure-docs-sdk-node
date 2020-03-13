@@ -8,13 +8,12 @@ items:
       - typeScript
     summary: ''
     syntax:
-      content: 'function logPolicy(loggingOptions?: LogPolicyOptions)'
+      content: 'function logPolicy(loggingOptions: LogPolicyOptions)'
       parameters:
         - id: loggingOptions
           type:
             - '@azure/core-http.LogPolicyOptions'
           description: ''
-          optional: true
       return:
         type:
           - '@azure/core-http.RequestPolicyFactory'

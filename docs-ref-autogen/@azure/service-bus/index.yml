@@ -4,100 +4,206 @@ items:
     name: '@azure/service-bus'
     summary: ''
     children:
-      - '@azure/service-bus.ReceiveMode'
-      - '@azure/service-bus.QueueClient'
-      - '@azure/service-bus.Receiver'
-      - '@azure/service-bus.Sender'
-      - '@azure/service-bus.ServiceBusClient'
-      - '@azure/service-bus.ServiceBusMessage'
-      - '@azure/service-bus.SessionReceiver'
-      - '@azure/service-bus.SubscriptionClient'
-      - '@azure/service-bus.TopicClient'
+      - '@azure/service-bus.ClientType'
       - '@azure/service-bus.Client'
+      - '@azure/service-bus.ClientEntityContext'
+      - '@azure/service-bus.ClientEntityContextBase'
+      - '@azure/service-bus.ClientEntityContextOptions'
+      - '@azure/service-bus.ConnectionContext'
+      - '@azure/service-bus.BatchingReceiver'
+      - '@azure/service-bus.LinkEntity'
+      - '@azure/service-bus.LinkEntityOptions'
+      - '@azure/service-bus.ManagementClient'
       - '@azure/service-bus.CorrelationFilter'
-      - '@azure/service-bus.DeadLetterOptions'
-      - '@azure/service-bus.MessageHandlerOptions'
+      - '@azure/service-bus.ManagementClientOptions'
+      - '@azure/service-bus.RuleDescription'
+      - '@azure/service-bus.ReceiverType'
+      - '@azure/service-bus.MessageReceiver'
+      - '@azure/service-bus.DispositionOptions'
+      - '@azure/service-bus.OnAmqpEventAsPromise'
       - '@azure/service-bus.OnError'
       - '@azure/service-bus.OnMessage'
+      - '@azure/service-bus.PromiseLike'
+      - '@azure/service-bus.ReceiveOptions'
+      - '@azure/service-bus.MessageSender'
+      - '@azure/service-bus.StreamingReceiver'
+      - '@azure/service-bus.MessageHandlerOptions'
+      - '@azure/service-bus.QueueClient'
+      - '@azure/service-bus.Receiver'
+      - '@azure/service-bus.SessionReceiver'
+      - '@azure/service-bus.Sender'
       - '@azure/service-bus.QueueDetails'
       - '@azure/service-bus.QueueOptions'
-      - '@azure/service-bus.ReceivedMessage'
-      - '@azure/service-bus.ReceivedMessageInfo'
-      - '@azure/service-bus.RuleDescription'
       - '@azure/service-bus.RuleDetails'
       - '@azure/service-bus.RuleOptions'
-      - '@azure/service-bus.SendableMessageInfo'
-      - '@azure/service-bus.ServiceBusClientOptions'
-      - '@azure/service-bus.SessionMessageHandlerOptions'
-      - '@azure/service-bus.SessionReceiverOptions'
       - '@azure/service-bus.SqlFilter'
+      - '@azure/service-bus.SqlAction'
+      - '@azure/service-bus.SqlParameter'
+      - '@azure/service-bus.getRawSqlParameters'
       - '@azure/service-bus.SubscriptionDetails'
       - '@azure/service-bus.SubscriptionOptions'
       - '@azure/service-bus.TopicDetails'
       - '@azure/service-bus.TopicOptions'
+      - '@azure/service-bus.ServiceBusAtomManagementClient'
+      - '@azure/service-bus.CreateQueueResponse'
+      - '@azure/service-bus.CreateRuleResponse'
+      - '@azure/service-bus.CreateSubscriptionResponse'
+      - '@azure/service-bus.CreateTopicResponse'
+      - '@azure/service-bus.DeleteQueueResponse'
+      - '@azure/service-bus.DeleteRuleResponse'
+      - '@azure/service-bus.DeleteSubscriptionResponse'
+      - '@azure/service-bus.DeleteTopicResponse'
+      - '@azure/service-bus.GetQueueResponse'
+      - '@azure/service-bus.GetRuleResponse'
+      - '@azure/service-bus.GetSubscriptionResponse'
+      - '@azure/service-bus.GetTopicResponse'
+      - '@azure/service-bus.ListQueuesResponse'
+      - '@azure/service-bus.ListRequestOptions'
+      - '@azure/service-bus.ListRulesResponse'
+      - '@azure/service-bus.ListSubscriptionsResponse'
+      - '@azure/service-bus.ListTopicsResponse'
+      - '@azure/service-bus.QueueResponse'
+      - '@azure/service-bus.RuleResponse'
+      - '@azure/service-bus.ServiceBusAtomManagementClientOptions'
+      - '@azure/service-bus.SubscriptionResponse'
+      - '@azure/service-bus.TopicResponse'
+      - '@azure/service-bus.UpdateQueueResponse'
+      - '@azure/service-bus.UpdateRuleResponse'
+      - '@azure/service-bus.UpdateSubscriptionResponse'
+      - '@azure/service-bus.UpdateTopicResponse'
+      - '@azure/service-bus.ServiceBusClient'
+      - '@azure/service-bus.ServiceBusClientOptions'
+      - '@azure/service-bus.DispositionStatus'
+      - '@azure/service-bus.DispositionType'
+      - '@azure/service-bus.ReceiveMode'
+      - '@azure/service-bus.ServiceBusMessage'
+      - '@azure/service-bus.DeadLetterOptions'
+      - '@azure/service-bus.ReceivedMessageInfo'
+      - '@azure/service-bus.SendableMessageInfo'
+      - '@azure/service-bus.ServiceBusDeliveryAnnotations'
+      - '@azure/service-bus.ServiceBusMessageAnnotations'
+      - '@azure/service-bus.getMessagePropertyTypeMismatchError'
+      - '@azure/service-bus.toAmqpMessage'
+      - '@azure/service-bus.SessionCallee'
+      - '@azure/service-bus.MessageSession'
+      - '@azure/service-bus.CreateMessageSessionReceiverLinkOptions'
+      - '@azure/service-bus.SessionManagerOptions'
+      - '@azure/service-bus.SessionMessageHandlerOptions'
+      - '@azure/service-bus.SessionReceiverOptions'
+      - '@azure/service-bus.MessageSessionOptions'
+      - '@azure/service-bus.SessionEntityType'
+      - '@azure/service-bus.SessionManager'
+      - '@azure/service-bus.SubscriptionClient'
+      - '@azure/service-bus.TopicClient'
+      - '@azure/service-bus.buildError'
+      - '@azure/service-bus.deserializeAtomXmlResponse'
+      - '@azure/service-bus.serializeToAtomXmlRequest'
+      - '@azure/service-bus.ConcurrentExpiringMap'
+      - '@azure/service-bus.generateKey'
+      - '@azure/service-bus.generateKey'
+      - '@azure/service-bus.getAlreadyReceivingErrorMsg'
+      - '@azure/service-bus.getClientClosedErrorMsg'
+      - '@azure/service-bus.getErrorMessageNotSupportedInReceiveAndDeleteMode'
+      - '@azure/service-bus.getOpenReceiverErrorMsg'
+      - '@azure/service-bus.getOpenSenderErrorMsg'
+      - '@azure/service-bus.getReceiverClosedErrorMsg'
+      - '@azure/service-bus.getSenderClosedErrorMsg'
+      - '@azure/service-bus.throwErrorIfClientOrConnectionClosed'
+      - '@azure/service-bus.throwErrorIfConnectionClosed'
+      - '@azure/service-bus.throwTypeErrorIfParameterIsEmptyString'
+      - '@azure/service-bus.throwTypeErrorIfParameterMissing'
+      - '@azure/service-bus.throwTypeErrorIfParameterNotLong'
+      - '@azure/service-bus.throwTypeErrorIfParameterNotLongArray'
+      - '@azure/service-bus.throwTypeErrorIfParameterTypeMismatch'
+      - '@azure/service-bus.parseURL'
+      - '@azure/service-bus.parseURL'
+      - '@azure/service-bus.SasServiceClientCredentials'
+      - '@azure/service-bus.Semaphore'
       - '@azure/service-bus.AuthorizationRule'
       - '@azure/service-bus.EntityStatus'
       - '@azure/service-bus.MessageCountDetails'
-      - '@azure/service-bus.SqlAction'
-      - '@azure/service-bus.SqlParameter'
+      - '@azure/service-bus.calculateRenewAfterDuration'
+      - '@azure/service-bus.convertTicksToDate'
+      - '@azure/service-bus.getProcessorCount'
+      - '@azure/service-bus.getUniqueName'
+      - '@azure/service-bus.reorderLockToken'
+      - '@azure/service-bus.toBuffer'
     type: package
     langs:
       - typeScript
 references:
-  - uid: '@azure/service-bus.ReceiveMode'
-    name: ReceiveMode
-  - uid: '@azure/service-bus.QueueClient'
-    name: QueueClient
-  - uid: '@azure/service-bus.Receiver'
-    name: Receiver
-  - uid: '@azure/service-bus.Sender'
-    name: Sender
-  - uid: '@azure/service-bus.ServiceBusClient'
-    name: ServiceBusClient
-  - uid: '@azure/service-bus.ServiceBusMessage'
-    name: ServiceBusMessage
-  - uid: '@azure/service-bus.SessionReceiver'
-    name: SessionReceiver
-  - uid: '@azure/service-bus.SubscriptionClient'
-    name: SubscriptionClient
-  - uid: '@azure/service-bus.TopicClient'
-    name: TopicClient
+  - uid: '@azure/service-bus.ClientType'
+    name: ClientType
   - uid: '@azure/service-bus.Client'
     name: Client
+  - uid: '@azure/service-bus.ClientEntityContext'
+    name: ClientEntityContext
+  - uid: '@azure/service-bus.ClientEntityContextBase'
+    name: ClientEntityContextBase
+  - uid: '@azure/service-bus.ClientEntityContextOptions'
+    name: ClientEntityContextOptions
+  - uid: '@azure/service-bus.ConnectionContext'
+    name: ConnectionContext
+  - uid: '@azure/service-bus.BatchingReceiver'
+    name: BatchingReceiver
+  - uid: '@azure/service-bus.LinkEntity'
+    name: LinkEntity
+  - uid: '@azure/service-bus.LinkEntityOptions'
+    name: LinkEntityOptions
+  - uid: '@azure/service-bus.ManagementClient'
+    name: ManagementClient
   - uid: '@azure/service-bus.CorrelationFilter'
     name: CorrelationFilter
-  - uid: '@azure/service-bus.DeadLetterOptions'
-    name: DeadLetterOptions
-  - uid: '@azure/service-bus.MessageHandlerOptions'
-    name: MessageHandlerOptions
+  - uid: '@azure/service-bus.ManagementClientOptions'
+    name: ManagementClientOptions
+  - uid: '@azure/service-bus.RuleDescription'
+    name: RuleDescription
+  - uid: '@azure/service-bus.ReceiverType'
+    name: ReceiverType
+  - uid: '@azure/service-bus.MessageReceiver'
+    name: MessageReceiver
+  - uid: '@azure/service-bus.DispositionOptions'
+    name: DispositionOptions
+  - uid: '@azure/service-bus.OnAmqpEventAsPromise'
+    name: OnAmqpEventAsPromise
   - uid: '@azure/service-bus.OnError'
     name: OnError
   - uid: '@azure/service-bus.OnMessage'
     name: OnMessage
+  - uid: '@azure/service-bus.PromiseLike'
+    name: PromiseLike
+  - uid: '@azure/service-bus.ReceiveOptions'
+    name: ReceiveOptions
+  - uid: '@azure/service-bus.MessageSender'
+    name: MessageSender
+  - uid: '@azure/service-bus.StreamingReceiver'
+    name: StreamingReceiver
+  - uid: '@azure/service-bus.MessageHandlerOptions'
+    name: MessageHandlerOptions
+  - uid: '@azure/service-bus.QueueClient'
+    name: QueueClient
+  - uid: '@azure/service-bus.Receiver'
+    name: Receiver
+  - uid: '@azure/service-bus.SessionReceiver'
+    name: SessionReceiver
+  - uid: '@azure/service-bus.Sender'
+    name: Sender
   - uid: '@azure/service-bus.QueueDetails'
     name: QueueDetails
   - uid: '@azure/service-bus.QueueOptions'
     name: QueueOptions
-  - uid: '@azure/service-bus.ReceivedMessage'
-    name: ReceivedMessage
-  - uid: '@azure/service-bus.ReceivedMessageInfo'
-    name: ReceivedMessageInfo
-  - uid: '@azure/service-bus.RuleDescription'
-    name: RuleDescription
   - uid: '@azure/service-bus.RuleDetails'
     name: RuleDetails
   - uid: '@azure/service-bus.RuleOptions'
     name: RuleOptions
-  - uid: '@azure/service-bus.SendableMessageInfo'
-    name: SendableMessageInfo
-  - uid: '@azure/service-bus.ServiceBusClientOptions'
-    name: ServiceBusClientOptions
-  - uid: '@azure/service-bus.SessionMessageHandlerOptions'
-    name: SessionMessageHandlerOptions
-  - uid: '@azure/service-bus.SessionReceiverOptions'
-    name: SessionReceiverOptions
   - uid: '@azure/service-bus.SqlFilter'
     name: SqlFilter
+  - uid: '@azure/service-bus.SqlAction'
+    name: SqlAction
+  - uid: '@azure/service-bus.SqlParameter'
+    name: SqlParameter
+  - uid: '@azure/service-bus.getRawSqlParameters'
+    name: 'getRawSqlParameters(SqlParameter[] | undefined)'
   - uid: '@azure/service-bus.SubscriptionDetails'
     name: SubscriptionDetails
   - uid: '@azure/service-bus.SubscriptionOptions'
@@ -106,13 +212,171 @@ references:
     name: TopicDetails
   - uid: '@azure/service-bus.TopicOptions'
     name: TopicOptions
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClient'
+    name: ServiceBusAtomManagementClient
+  - uid: '@azure/service-bus.CreateQueueResponse'
+    name: CreateQueueResponse
+  - uid: '@azure/service-bus.CreateRuleResponse'
+    name: CreateRuleResponse
+  - uid: '@azure/service-bus.CreateSubscriptionResponse'
+    name: CreateSubscriptionResponse
+  - uid: '@azure/service-bus.CreateTopicResponse'
+    name: CreateTopicResponse
+  - uid: '@azure/service-bus.DeleteQueueResponse'
+    name: DeleteQueueResponse
+  - uid: '@azure/service-bus.DeleteRuleResponse'
+    name: DeleteRuleResponse
+  - uid: '@azure/service-bus.DeleteSubscriptionResponse'
+    name: DeleteSubscriptionResponse
+  - uid: '@azure/service-bus.DeleteTopicResponse'
+    name: DeleteTopicResponse
+  - uid: '@azure/service-bus.GetQueueResponse'
+    name: GetQueueResponse
+  - uid: '@azure/service-bus.GetRuleResponse'
+    name: GetRuleResponse
+  - uid: '@azure/service-bus.GetSubscriptionResponse'
+    name: GetSubscriptionResponse
+  - uid: '@azure/service-bus.GetTopicResponse'
+    name: GetTopicResponse
+  - uid: '@azure/service-bus.ListQueuesResponse'
+    name: ListQueuesResponse
+  - uid: '@azure/service-bus.ListRequestOptions'
+    name: ListRequestOptions
+  - uid: '@azure/service-bus.ListRulesResponse'
+    name: ListRulesResponse
+  - uid: '@azure/service-bus.ListSubscriptionsResponse'
+    name: ListSubscriptionsResponse
+  - uid: '@azure/service-bus.ListTopicsResponse'
+    name: ListTopicsResponse
+  - uid: '@azure/service-bus.QueueResponse'
+    name: QueueResponse
+  - uid: '@azure/service-bus.RuleResponse'
+    name: RuleResponse
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClientOptions'
+    name: ServiceBusAtomManagementClientOptions
+  - uid: '@azure/service-bus.SubscriptionResponse'
+    name: SubscriptionResponse
+  - uid: '@azure/service-bus.TopicResponse'
+    name: TopicResponse
+  - uid: '@azure/service-bus.UpdateQueueResponse'
+    name: UpdateQueueResponse
+  - uid: '@azure/service-bus.UpdateRuleResponse'
+    name: UpdateRuleResponse
+  - uid: '@azure/service-bus.UpdateSubscriptionResponse'
+    name: UpdateSubscriptionResponse
+  - uid: '@azure/service-bus.UpdateTopicResponse'
+    name: UpdateTopicResponse
+  - uid: '@azure/service-bus.ServiceBusClient'
+    name: ServiceBusClient
+  - uid: '@azure/service-bus.ServiceBusClientOptions'
+    name: ServiceBusClientOptions
+  - uid: '@azure/service-bus.DispositionStatus'
+    name: DispositionStatus
+  - uid: '@azure/service-bus.DispositionType'
+    name: DispositionType
+  - uid: '@azure/service-bus.ReceiveMode'
+    name: ReceiveMode
+  - uid: '@azure/service-bus.ServiceBusMessage'
+    name: ServiceBusMessage
+  - uid: '@azure/service-bus.DeadLetterOptions'
+    name: DeadLetterOptions
+  - uid: '@azure/service-bus.ReceivedMessageInfo'
+    name: ReceivedMessageInfo
+  - uid: '@azure/service-bus.SendableMessageInfo'
+    name: SendableMessageInfo
+  - uid: '@azure/service-bus.ServiceBusDeliveryAnnotations'
+    name: ServiceBusDeliveryAnnotations
+  - uid: '@azure/service-bus.ServiceBusMessageAnnotations'
+    name: ServiceBusMessageAnnotations
+  - uid: '@azure/service-bus.getMessagePropertyTypeMismatchError'
+    name: getMessagePropertyTypeMismatchError(SendableMessageInfo)
+  - uid: '@azure/service-bus.toAmqpMessage'
+    name: toAmqpMessage(SendableMessageInfo)
+  - uid: '@azure/service-bus.SessionCallee'
+    name: SessionCallee
+  - uid: '@azure/service-bus.MessageSession'
+    name: MessageSession
+  - uid: '@azure/service-bus.CreateMessageSessionReceiverLinkOptions'
+    name: CreateMessageSessionReceiverLinkOptions
+  - uid: '@azure/service-bus.SessionManagerOptions'
+    name: SessionManagerOptions
+  - uid: '@azure/service-bus.SessionMessageHandlerOptions'
+    name: SessionMessageHandlerOptions
+  - uid: '@azure/service-bus.SessionReceiverOptions'
+    name: SessionReceiverOptions
+  - uid: '@azure/service-bus.MessageSessionOptions'
+    name: MessageSessionOptions
+  - uid: '@azure/service-bus.SessionEntityType'
+    name: SessionEntityType
+  - uid: '@azure/service-bus.SessionManager'
+    name: SessionManager
+  - uid: '@azure/service-bus.SubscriptionClient'
+    name: SubscriptionClient
+  - uid: '@azure/service-bus.TopicClient'
+    name: TopicClient
+  - uid: '@azure/service-bus.buildError'
+    name: buildError(HttpOperationResponse)
+  - uid: '@azure/service-bus.deserializeAtomXmlResponse'
+    name: 'deserializeAtomXmlResponse(string[], HttpOperationResponse)'
+  - uid: '@azure/service-bus.serializeToAtomXmlRequest'
+    name: 'serializeToAtomXmlRequest(string, any)'
+  - uid: '@azure/service-bus.ConcurrentExpiringMap'
+    name: ConcurrentExpiringMap
+  - uid: '@azure/service-bus.generateKey'
+    name: 'generateKey(string, string)'
+  - uid: '@azure/service-bus.generateKey'
+    name: 'generateKey(string, string)'
+  - uid: '@azure/service-bus.getAlreadyReceivingErrorMsg'
+    name: 'getAlreadyReceivingErrorMsg(string, undefined | string)'
+  - uid: '@azure/service-bus.getClientClosedErrorMsg'
+    name: getClientClosedErrorMsg(string)
+  - uid: '@azure/service-bus.getErrorMessageNotSupportedInReceiveAndDeleteMode'
+    name: getErrorMessageNotSupportedInReceiveAndDeleteMode(string)
+  - uid: '@azure/service-bus.getOpenReceiverErrorMsg'
+    name: 'getOpenReceiverErrorMsg(ClientType, string, undefined | string)'
+  - uid: '@azure/service-bus.getOpenSenderErrorMsg'
+    name: 'getOpenSenderErrorMsg(string, string)'
+  - uid: '@azure/service-bus.getReceiverClosedErrorMsg'
+    name: 'getReceiverClosedErrorMsg(string, ClientType, boolean, undefined | string)'
+  - uid: '@azure/service-bus.getSenderClosedErrorMsg'
+    name: 'getSenderClosedErrorMsg(string, ClientType, boolean)'
+  - uid: '@azure/service-bus.throwErrorIfClientOrConnectionClosed'
+    name: 'throwErrorIfClientOrConnectionClosed(ConnectionContext, string, boolean)'
+  - uid: '@azure/service-bus.throwErrorIfConnectionClosed'
+    name: throwErrorIfConnectionClosed(ConnectionContext)
+  - uid: '@azure/service-bus.throwTypeErrorIfParameterIsEmptyString'
+    name: 'throwTypeErrorIfParameterIsEmptyString(string, string, string)'
+  - uid: '@azure/service-bus.throwTypeErrorIfParameterMissing'
+    name: 'throwTypeErrorIfParameterMissing(string, string, any)'
+  - uid: '@azure/service-bus.throwTypeErrorIfParameterNotLong'
+    name: 'throwTypeErrorIfParameterNotLong(string, string, any)'
+  - uid: '@azure/service-bus.throwTypeErrorIfParameterNotLongArray'
+    name: 'throwTypeErrorIfParameterNotLongArray(string, string, any[])'
+  - uid: '@azure/service-bus.throwTypeErrorIfParameterTypeMismatch'
+    name: 'throwTypeErrorIfParameterTypeMismatch(string, string, any, string)'
+  - uid: '@azure/service-bus.parseURL'
+    name: parseURL(string)
+  - uid: '@azure/service-bus.parseURL'
+    name: parseURL(string)
+  - uid: '@azure/service-bus.SasServiceClientCredentials'
+    name: SasServiceClientCredentials
+  - uid: '@azure/service-bus.Semaphore'
+    name: Semaphore
   - uid: '@azure/service-bus.AuthorizationRule'
     name: AuthorizationRule
   - uid: '@azure/service-bus.EntityStatus'
     name: EntityStatus
   - uid: '@azure/service-bus.MessageCountDetails'
     name: MessageCountDetails
-  - uid: '@azure/service-bus.SqlAction'
-    name: SqlAction
-  - uid: '@azure/service-bus.SqlParameter'
-    name: SqlParameter
+  - uid: '@azure/service-bus.calculateRenewAfterDuration'
+    name: calculateRenewAfterDuration(Date)
+  - uid: '@azure/service-bus.convertTicksToDate'
+    name: 'convertTicksToDate(number[])'
+  - uid: '@azure/service-bus.getProcessorCount'
+    name: getProcessorCount()
+  - uid: '@azure/service-bus.getUniqueName'
+    name: getUniqueName(string)
+  - uid: '@azure/service-bus.reorderLockToken'
+    name: reorderLockToken(Buffer)
+  - uid: '@azure/service-bus.toBuffer'
+    name: toBuffer(any)

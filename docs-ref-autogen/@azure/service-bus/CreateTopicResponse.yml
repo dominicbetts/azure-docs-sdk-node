@@ -1,0 +1,530 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.CreateTopicResponse'
+    name: CreateTopicResponse
+    fullName: CreateTopicResponse
+    children:
+      - '@azure/service-bus.CreateTopicResponse.accessedOn'
+      - '@azure/service-bus.CreateTopicResponse.authorizationRules'
+      - '@azure/service-bus.CreateTopicResponse.autoDeleteOnIdle'
+      - '@azure/service-bus.CreateTopicResponse.createdOn'
+      - '@azure/service-bus.CreateTopicResponse.defaultMessageTtl'
+      - >-
+        @azure/service-bus.CreateTopicResponse.duplicateDetectionHistoryTimeWindow
+      - '@azure/service-bus.CreateTopicResponse.enableBatchedOperations'
+      - '@azure/service-bus.CreateTopicResponse.enableExpress'
+      - '@azure/service-bus.CreateTopicResponse.enablePartitioning'
+      - '@azure/service-bus.CreateTopicResponse.enableSubscriptionPartitioning'
+      - '@azure/service-bus.CreateTopicResponse.entityAvailabilityStatus'
+      - '@azure/service-bus.CreateTopicResponse.filteringMessagesBeforePublishing'
+      - '@azure/service-bus.CreateTopicResponse.isAnonymousAccessible'
+      - '@azure/service-bus.CreateTopicResponse.isExpress'
+      - '@azure/service-bus.CreateTopicResponse.maxDeliveryCount'
+      - '@azure/service-bus.CreateTopicResponse.maxSizeInMegabytes'
+      - '@azure/service-bus.CreateTopicResponse.messageCount'
+      - '@azure/service-bus.CreateTopicResponse.messageCountDetails'
+      - '@azure/service-bus.CreateTopicResponse.requiresDuplicateDetection'
+      - '@azure/service-bus.CreateTopicResponse.sizeInBytes'
+      - '@azure/service-bus.CreateTopicResponse.status'
+      - '@azure/service-bus.CreateTopicResponse.subscriptionCount'
+      - '@azure/service-bus.CreateTopicResponse.supportOrdering'
+      - '@azure/service-bus.CreateTopicResponse.topicName'
+      - '@azure/service-bus.CreateTopicResponse.updatedOn'
+      - '@azure/service-bus.CreateTopicResponse.userMetadata'
+    langs:
+      - typeScript
+    type: interface
+    summary: Create Topic response
+    extends:
+      name: '@azure/service-bus.TopicDetails'
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.accessedOn'
+    name: accessedOn
+    fullName: accessedOn
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Accessed at timestamp
+    optional: true
+    syntax:
+      content: 'accessedOn?: undefined | string'
+      return:
+        type:
+          - undefined | string
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.authorizationRules'
+    name: authorizationRules
+    fullName: authorizationRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Authorization rules on the topic
+    optional: true
+    syntax:
+      content: 'authorizationRules?: AuthorizationRule[]'
+      return:
+        type:
+          - '@azure/service-bus.AuthorizationRule[]'
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.autoDeleteOnIdle'
+    name: autoDeleteOnIdle
+    fullName: autoDeleteOnIdle
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      Max idle time before entity is deleted.
+      This is to be specified in ISO-8601 duration format
+      such as "PT1M" for 1 minute, "PT5S" for 5 seconds.
+    optional: true
+    syntax:
+      content: 'autoDeleteOnIdle?: undefined | string'
+      return:
+        type:
+          - undefined | string
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.createdOn'
+    name: createdOn
+    fullName: createdOn
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Created at timestamp
+    optional: true
+    syntax:
+      content: 'createdOn?: undefined | string'
+      return:
+        type:
+          - undefined | string
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.defaultMessageTtl'
+    name: defaultMessageTtl
+    fullName: defaultMessageTtl
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Determines how long a message lives in the associated subscriptions.
+
+      Subscriptions inherit the TTL from the topic unless they are created
+      explicitly with
+
+      a smaller TTL. Based on whether dead-lettering is enabled, a message whose
+      TTL has
+
+      expired will either be moved to the subscription’s associated dead-letter
+      sub-queue or
+
+      will be permanently deleted.
+
+      This is to be specified in ISO-8601 duration format
+
+      such as "PT1M" for 1 minute, "PT5S" for 5 seconds.
+    syntax:
+      content: 'defaultMessageTtl: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.duplicateDetectionHistoryTimeWindow'
+    name: duplicateDetectionHistoryTimeWindow
+    fullName: duplicateDetectionHistoryTimeWindow
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the time span during which the Service Bus will detect message
+      duplication.
+
+      This is to be specified in ISO-8601 duration format
+
+      such as "PT1M" for 1 minute, "PT5S" for 5 seconds.
+    syntax:
+      content: 'duplicateDetectionHistoryTimeWindow: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.enableBatchedOperations'
+    name: enableBatchedOperations
+    fullName: enableBatchedOperations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies if batched operations should be allowed.
+    syntax:
+      content: 'enableBatchedOperations: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.enableExpress'
+    name: enableExpress
+    fullName: enableExpress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Enable express option
+    optional: true
+    syntax:
+      content: 'enableExpress?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.enablePartitioning'
+    name: enablePartitioning
+    fullName: enablePartitioning
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies whether the topic should be partitioned
+    syntax:
+      content: 'enablePartitioning: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.enableSubscriptionPartitioning'
+    name: enableSubscriptionPartitioning
+    fullName: enableSubscriptionPartitioning
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Enable Subscription Partitioning option
+    optional: true
+    syntax:
+      content: 'enableSubscriptionPartitioning?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.entityAvailabilityStatus'
+    name: entityAvailabilityStatus
+    fullName: entityAvailabilityStatus
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Entity availability status
+    optional: true
+    syntax:
+      content: 'entityAvailabilityStatus?: undefined | string'
+      return:
+        type:
+          - undefined | string
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.filteringMessagesBeforePublishing'
+    name: filteringMessagesBeforePublishing
+    fullName: filteringMessagesBeforePublishing
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Filtering Messages Before Publishing option
+    optional: true
+    syntax:
+      content: 'filteringMessagesBeforePublishing?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.isAnonymousAccessible'
+    name: isAnonymousAccessible
+    fullName: isAnonymousAccessible
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Is anonymous accessible topic option
+    optional: true
+    syntax:
+      content: 'isAnonymousAccessible?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.isExpress'
+    name: isExpress
+    fullName: isExpress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Is Express option
+    optional: true
+    syntax:
+      content: 'isExpress?: undefined | false | true'
+      return:
+        type:
+          - undefined | false | true
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.maxDeliveryCount'
+    name: maxDeliveryCount
+    fullName: maxDeliveryCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The maximum delivery count of messages after which if it is still not
+      settled,
+
+      gets moved to the dead-letter sub-queue.
+    optional: true
+    syntax:
+      content: 'maxDeliveryCount?: undefined | number'
+      return:
+        type:
+          - undefined | number
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.maxSizeInMegabytes'
+    name: maxSizeInMegabytes
+    fullName: maxSizeInMegabytes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the maximum topic size in megabytes. Any attempt to enqueue a
+      message
+
+      that will cause the topic to exceed this value will fail. All messages
+      that are
+
+      stored in the topic or any of its subscriptions count towards this value.
+
+      Multiple copies of a message that reside in one or multiple subscriptions
+
+      count as a single messages. For example, if message m exists once in
+      subscription
+
+      s1 and twice in subscription s2, m is counted as a single message.
+    syntax:
+      content: 'maxSizeInMegabytes: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.messageCount'
+    name: messageCount
+    fullName: messageCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The entity's message count.
+    optional: true
+    syntax:
+      content: 'messageCount?: undefined | number'
+      return:
+        type:
+          - undefined | number
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.messageCountDetails'
+    name: messageCountDetails
+    fullName: messageCountDetails
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Message count details
+    optional: true
+    syntax:
+      content: 'messageCountDetails?: MessageCountDetails'
+      return:
+        type:
+          - '@azure/service-bus.MessageCountDetails'
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.requiresDuplicateDetection'
+    name: requiresDuplicateDetection
+    fullName: requiresDuplicateDetection
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      If enabled, the topic will detect duplicate messages within the time span
+      specified
+
+      by the DuplicateDetectionHistoryTimeWindow property.
+
+      Settable only at topic creation time.
+    syntax:
+      content: 'requiresDuplicateDetection: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.sizeInBytes'
+    name: sizeInBytes
+    fullName: sizeInBytes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies the topic size in bytes.
+    optional: true
+    syntax:
+      content: 'sizeInBytes?: undefined | number'
+      return:
+        type:
+          - undefined | number
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.status'
+    name: status
+    fullName: status
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Status of the messaging entity.
+    optional: true
+    syntax:
+      content: 'status?: EntityStatus'
+      return:
+        type:
+          - '@azure/service-bus.EntityStatus'
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.subscriptionCount'
+    name: subscriptionCount
+    fullName: subscriptionCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The subscription count on given topic.
+    optional: true
+    syntax:
+      content: 'subscriptionCount?: undefined | number'
+      return:
+        type:
+          - undefined | number
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.supportOrdering'
+    name: supportOrdering
+    fullName: supportOrdering
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies whether the topic supports message ordering.
+    syntax:
+      content: 'supportOrdering: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.topicName'
+    name: topicName
+    fullName: topicName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Name of the topic
+    syntax:
+      content: 'topicName: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.updatedOn'
+    name: updatedOn
+    fullName: updatedOn
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Updated at timestamp
+    optional: true
+    syntax:
+      content: 'updatedOn?: undefined | string'
+      return:
+        type:
+          - undefined | string
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.CreateTopicResponse.userMetadata'
+    name: userMetadata
+    fullName: userMetadata
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The user provided metadata information associated with the topic
+      description.
+
+      Used to specify textual content such as tags, labels, etc.
+
+      Value must not exceed 1024 bytes encoded in utf-8.
+    optional: true
+    syntax:
+      content: 'userMetadata?: undefined | string'
+      return:
+        type:
+          - undefined | string
+        description: ''
+    package: '@azure/service-bus'
+references:
+  - uid: '@azure/service-bus.TopicDetails'
+    name: TopicDetails
+    spec.typeScript:
+      - name: TopicDetails
+        fullName: TopicDetails
+        uid: '@azure/service-bus.TopicDetails'
+  - uid: '@azure/service-bus.AuthorizationRule[]'
+    name: 'AuthorizationRule[]'
+    spec.typeScript:
+      - name: AuthorizationRule
+        fullName: AuthorizationRule
+        uid: '@azure/service-bus.AuthorizationRule'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@azure/service-bus.MessageCountDetails'
+    name: MessageCountDetails
+    spec.typeScript:
+      - name: MessageCountDetails
+        fullName: MessageCountDetails
+        uid: '@azure/service-bus.MessageCountDetails'
+  - uid: '@azure/service-bus.EntityStatus'
+    name: EntityStatus
+    spec.typeScript:
+      - name: EntityStatus
+        fullName: EntityStatus
+        uid: '@azure/service-bus.EntityStatus'

@@ -128,9 +128,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The parent container.
     syntax:
-      content: 'container: Container'
+      content: 'public container: Container'
       return:
         type:
           - '@azure/cosmos.Container'
@@ -154,7 +154,7 @@ items:
       There is no set schema for JSON items. They may contain any number of
       custom properties.
     syntax:
-      content: 'function create<T>(body: T, options?: RequestOptions)'
+      content: 'function create<T>(body: T, options: RequestOptions)'
       parameters:
         - id: body
           type:
@@ -168,7 +168,6 @@ items:
           description: >
             Used for modifying the request (for instance, specifying the
             partition key).
-          optional: true
       return:
         type:
           - Promise<@azure/cosmos.ItemResponse<T>>

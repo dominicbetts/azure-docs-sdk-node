@@ -1,0 +1,29 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.deserializeAtomXmlResponse'
+    name: 'deserializeAtomXmlResponse(string[], HttpOperationResponse)'
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Transforms response to contain the parsed data.
+    syntax:
+      content: >-
+        function deserializeAtomXmlResponse(nameProperties: string[], response:
+        HttpOperationResponse)
+      parameters:
+        - id: nameProperties
+          type:
+            - 'string[]'
+          description: |-
+            The set of 'name' properties to be constructed on the
+            resultant object e.g., QueueName, TopicName, etc.
+        - id: response
+          type:
+            - HttpOperationResponse
+          description: ''
+      return:
+        type:
+          - Promise<HttpOperationResponse>
+        description: ''
+    package: '@azure/service-bus'

@@ -27,9 +27,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 'The parent <xref:Container>.'
     syntax:
-      content: 'container: Container'
+      content: 'public container: Container'
       return:
         type:
           - '@azure/cosmos.Container'
@@ -104,9 +104,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 'The id of the given <xref:StoredProcedure>.'
     syntax:
-      content: 'id: string'
+      content: 'public id: string'
       return:
         type:
           - string

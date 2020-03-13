@@ -1,0 +1,21 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/cosmos.hashObject'
+    name: hashObject(any)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function hashObject(object: any)'
+      parameters:
+        - id: object
+          type:
+            - any
+          description: ''
+      return:
+        type:
+          - Promise<any>
+        description: ''
+    package: '@azure/cosmos'

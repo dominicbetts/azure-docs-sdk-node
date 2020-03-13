@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/cosmos.hmac'
+    name: 'hmac(string, string)'
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function hmac(key: string, message: string)'
+      parameters:
+        - id: key
+          type:
+            - string
+          description: ''
+        - id: message
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - Promise<string>
+        description: ''
+    package: '@azure/cosmos'

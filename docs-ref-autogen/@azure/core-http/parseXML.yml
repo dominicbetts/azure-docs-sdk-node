@@ -6,22 +6,18 @@ items:
     type: function
     langs:
       - typeScript
-    summary: Converts given XML string into JSON
+    summary: ''
     syntax:
       content: 'function parseXML(str: string, opts?: Object)'
       parameters:
         - id: str
           type:
             - string
-          description: String containing the XML content to be parsed into JSON
+          description: ''
         - id: opts
           type:
             - Object
-          description: >
-            Options that govern the parsing of given xml string
-
-            `includeRoot` indicates whether the root element is to be included
-            or not in the output
+          description: ''
           optional: true
       return:
         type:

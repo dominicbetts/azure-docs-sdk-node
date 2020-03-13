@@ -28,7 +28,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'client: CosmosClient'
+      content: 'public client: CosmosClient'
       return:
         type:
           - '@azure/cosmos.CosmosClient'
@@ -71,7 +71,7 @@ items:
       Use `.container(id)` to read, replace, or delete a specific, existing
       <xref:Database> by id.
     syntax:
-      content: 'containers: Containers'
+      content: 'public containers: Containers'
       return:
         type:
           - '@azure/cosmos.Containers'
@@ -135,7 +135,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'id: string'
+      content: 'public id: string'
       return:
         type:
           - string
@@ -210,7 +210,7 @@ items:
       Use `.user(id)` to read, replace, or delete a specific, existing
       <xref:User> by id.
     syntax:
-      content: 'users: Users'
+      content: 'public users: Users'
       return:
         type:
           - '@azure/cosmos.Users'

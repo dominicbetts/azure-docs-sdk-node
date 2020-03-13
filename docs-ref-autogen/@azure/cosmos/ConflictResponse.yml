@@ -48,7 +48,7 @@ items:
       A reference to the <xref:Conflict> corresponding to the returned
       <xref:ConflictDefinition>.
     syntax:
-      content: 'conflict: Conflict'
+      content: 'public conflict: Conflict'
       return:
         type:
           - '@azure/cosmos.Conflict'
@@ -109,10 +109,10 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'headers: CosmosHeaders_2'
+      content: 'public headers: CosmosHeaders'
       return:
         type:
-          - '@azure/cosmos.CosmosHeaders_2'
+          - '@azure/cosmos.CosmosHeaders'
         description: ''
     package: '@azure/cosmos'
   - uid: '@azure/cosmos.ConflictResponse.requestCharge'
@@ -139,7 +139,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'resource: ConflictDefinition & Resource'
+      content: 'public resource: ConflictDefinition & Resource'
       return:
         type:
           - '@azure/cosmos.ConflictDefinition & @azure/cosmos.Resource'
@@ -154,7 +154,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'statusCode: StatusCode'
+      content: 'public statusCode: StatusCode'
       return:
         type:
           - StatusCode
@@ -170,7 +170,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'substatus?: SubStatusCode'
+      content: 'public substatus?: SubStatusCode'
       return:
         type:
           - '@azure/cosmos.SubStatusCode'
@@ -220,12 +220,6 @@ references:
       - name: Conflict
         fullName: Conflict
         uid: '@azure/cosmos.Conflict'
-  - uid: '@azure/cosmos.CosmosHeaders_2'
-    name: CosmosHeaders_2
-    spec.typeScript:
-      - name: CosmosHeaders_2
-        fullName: CosmosHeaders_2
-        uid: '@azure/cosmos.CosmosHeaders_2'
   - uid: '@azure/cosmos.SubStatusCode'
     name: SubStatusCode
     spec.typeScript:

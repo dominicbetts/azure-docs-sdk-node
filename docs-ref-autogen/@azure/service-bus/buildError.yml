@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.buildError'
+    name: buildError(HttpOperationResponse)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Utility to help construct the normalized `RestError` object based on given
+      error
+
+      information and other data present in the received `response` object.
+    syntax:
+      content: 'function buildError(response: HttpOperationResponse)'
+      parameters:
+        - id: response
+          type:
+            - HttpOperationResponse
+          description: |+
+
+      return:
+        type:
+          - RestError
+        description: ''
+    package: '@azure/service-bus'

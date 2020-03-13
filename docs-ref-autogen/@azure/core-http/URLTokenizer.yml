@@ -64,17 +64,11 @@ items:
           description: ''
         - id: state
           type:
-            - '@azure/core-http.URLTokenizerState'
+            - URLTokenizerState
           description: ''
           optional: true
     package: '@azure/core-http'
 references:
-  - uid: '@azure/core-http.URLTokenizerState'
-    name: URLTokenizerState
-    spec.typeScript:
-      - name: URLTokenizerState
-        fullName: URLTokenizerState
-        uid: '@azure/core-http.URLTokenizerState'
   - uid: '@azure/core-http.URLToken | undefined'
     name: URLToken | undefined
     spec.typeScript:

@@ -6,22 +6,18 @@ items:
     type: function
     langs:
       - typeScript
-    summary: Converts given JSON object to XML string
+    summary: ''
     syntax:
-      content: 'function stringifyXML(obj: any, opts?: Object)'
+      content: 'function stringifyXML(content: any, opts?: Object)'
       parameters:
-        - id: obj
+        - id: content
           type:
             - any
-          description: JSON object to be converted into XML string
+          description: ''
         - id: opts
           type:
             - Object
-          description: >
-            Options that govern the parsing of given JSON object
-
-            `rootName` indicates the name of the root element in the resulting
-            XML
+          description: ''
           optional: true
       return:
         type:

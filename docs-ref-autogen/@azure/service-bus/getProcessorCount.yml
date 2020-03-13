@@ -1,0 +1,17 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.getProcessorCount'
+    name: getProcessorCount()
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function getProcessorCount()
+      parameters: []
+      return:
+        type:
+          - number
+        description: ''
+    package: '@azure/service-bus'

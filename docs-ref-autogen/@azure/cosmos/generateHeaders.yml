@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/cosmos.generateHeaders'
+    name: 'generateHeaders(string, HTTPMethod, ResourceType, string, Date)'
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function generateHeaders(masterKey: string, method: HTTPMethod,
+        resourceType: ResourceType, resourceId: string, date: Date)
+      parameters:
+        - id: masterKey
+          type:
+            - string
+          description: ''
+        - id: method
+          type:
+            - HTTPMethod
+          description: ''
+        - id: resourceType
+          type:
+            - ResourceType
+          description: ''
+        - id: resourceId
+          type:
+            - string
+          description: ''
+        - id: date
+          type:
+            - Date
+          description: ''
+      return:
+        type:
+          - Promise<Object>
+        description: ''
+    package: '@azure/cosmos'

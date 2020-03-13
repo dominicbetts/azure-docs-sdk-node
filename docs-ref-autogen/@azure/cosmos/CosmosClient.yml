@@ -95,7 +95,7 @@ items:
       Use `.database(id)` to read, replace, or delete a specific, existing
       database by id.
     syntax:
-      content: 'databases: Databases'
+      content: 'public databases: Databases'
       return:
         type:
           - '@azure/cosmos.Databases'
@@ -195,7 +195,7 @@ items:
       Used for querying & reading all offers.
       Use `.offer(id)` to read, or replace existing offers.
     syntax:
-      content: 'offers: Offers'
+      content: 'public offers: Offers'
       return:
         type:
           - '@azure/cosmos.Offers'

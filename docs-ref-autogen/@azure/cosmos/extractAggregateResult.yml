@@ -1,0 +1,21 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/cosmos.extractAggregateResult'
+    name: extractAggregateResult(any)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function extractAggregateResult(payload: any)'
+      parameters:
+        - id: payload
+          type:
+            - any
+          description: ''
+      return:
+        type:
+          - any
+        description: ''
+    package: '@azure/cosmos'

@@ -92,7 +92,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'queryEngineExecutionTime: TimeSpan'
+      content: 'public queryEngineExecutionTime: TimeSpan'
       return:
         type:
           - TimeSpan
@@ -133,7 +133,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'systemFunctionExecutionTime: TimeSpan'
+      content: 'public systemFunctionExecutionTime: TimeSpan'
       return:
         type:
           - TimeSpan
@@ -163,7 +163,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'userDefinedFunctionExecutionTime: TimeSpan'
+      content: 'public userDefinedFunctionExecutionTime: TimeSpan'
       return:
         type:
           - TimeSpan
@@ -178,7 +178,12 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'static zero: RuntimeExecutionTimes'
+      content: |-
+        public static zero: RuntimeExecutionTimes = new RuntimeExecutionTimes(
+            TimeSpan.zero,
+            TimeSpan.zero,
+            TimeSpan.zero
+          )
       return:
         type:
           - '@azure/cosmos.RuntimeExecutionTimes'

@@ -1,0 +1,28 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClientOptions'
+    name: ServiceBusAtomManagementClientOptions
+    fullName: ServiceBusAtomManagementClientOptions
+    children:
+      - '@azure/service-bus.ServiceBusAtomManagementClientOptions.proxySettings'
+    langs:
+      - typeScript
+    type: interface
+    summary: Options to use with ServiceBusAtomManagementClient creation
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.ServiceBusAtomManagementClientOptions.proxySettings'
+    name: proxySettings
+    fullName: proxySettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Proxy related settings
+    optional: true
+    syntax:
+      content: 'proxySettings?: ProxySettings'
+      return:
+        type:
+          - ProxySettings
+        description: ''
+    package: '@azure/service-bus'

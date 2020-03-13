@@ -25,13 +25,12 @@ items:
       Constructs an instance of <xref:ExpiringAccessTokenCache> with
       an optional expiration buffer time.
     syntax:
-      content: 'new ExpiringAccessTokenCache(tokenRefreshBufferMs?: number)'
+      content: 'new ExpiringAccessTokenCache(tokenRefreshBufferMs: number)'
       parameters:
         - id: tokenRefreshBufferMs
           type:
             - number
           description: ''
-          optional: true
     package: '@azure/core-http'
   - uid: '@azure/core-http.ExpiringAccessTokenCache.getCachedToken'
     name: getCachedToken()

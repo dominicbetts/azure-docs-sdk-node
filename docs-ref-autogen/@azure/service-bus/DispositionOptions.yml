@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.DispositionOptions'
+    name: DispositionOptions
+    fullName: DispositionOptions
+    children:
+      - '@azure/service-bus.DispositionOptions.error'
+      - '@azure/service-bus.DispositionOptions.propertiesToModify'
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.DispositionOptions.error'
+    name: error
+    fullName: error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'error?: AmqpError'
+      return:
+        type:
+          - AmqpError
+        description: ''
+    package: '@azure/service-bus'
+  - uid: '@azure/service-bus.DispositionOptions.propertiesToModify'
+    name: propertiesToModify
+    fullName: propertiesToModify
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'propertiesToModify?: undefined | [key: string]: any'
+      return:
+        type:
+          - 'undefined | [key: string]: any'
+        description: ''
+    package: '@azure/service-bus'

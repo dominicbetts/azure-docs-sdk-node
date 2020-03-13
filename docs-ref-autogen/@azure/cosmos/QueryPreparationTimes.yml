@@ -93,7 +93,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'logicalPlanBuildTime: TimeSpan'
+      content: 'public logicalPlanBuildTime: TimeSpan'
       return:
         type:
           - TimeSpan
@@ -108,7 +108,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'physicalPlanBuildTime: TimeSpan'
+      content: 'public physicalPlanBuildTime: TimeSpan'
       return:
         type:
           - TimeSpan
@@ -123,7 +123,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'queryCompilationTime: TimeSpan'
+      content: 'public queryCompilationTime: TimeSpan'
       return:
         type:
           - TimeSpan
@@ -138,7 +138,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'queryOptimizationTime: TimeSpan'
+      content: 'public queryOptimizationTime: TimeSpan'
       return:
         type:
           - TimeSpan
@@ -198,7 +198,13 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'static zero: QueryPreparationTimes'
+      content: |-
+        public static zero: QueryPreparationTimes = new QueryPreparationTimes(
+            TimeSpan.zero,
+            TimeSpan.zero,
+            TimeSpan.zero,
+            TimeSpan.zero
+          )
       return:
         type:
           - '@azure/cosmos.QueryPreparationTimes'

@@ -1,0 +1,22 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.getUniqueName'
+    name: getUniqueName(string)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getUniqueName(name: string)'
+      parameters:
+        - id: name
+          type:
+            - string
+          description: |
+            The nme of the entity
+      return:
+        type:
+          - string
+        description: ''
+    package: '@azure/service-bus'

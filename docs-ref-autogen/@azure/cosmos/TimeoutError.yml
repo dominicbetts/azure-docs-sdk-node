@@ -1,0 +1,111 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/cosmos.TimeoutError'
+    name: TimeoutError
+    fullName: TimeoutError
+    children:
+      - '@azure/cosmos.TimeoutError.code'
+      - '@azure/cosmos.TimeoutError.Error'
+      - '@azure/cosmos.TimeoutError.message'
+      - '@azure/cosmos.TimeoutError.name'
+      - '@azure/cosmos.TimeoutError.stack'
+      - '@azure/cosmos.TimeoutError.constructor'
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    extends:
+      name: Error
+    package: '@azure/cosmos'
+  - uid: '@azure/cosmos.TimeoutError.code'
+    name: code
+    fullName: code
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'public code: string = TimeoutErrorCode'
+      return:
+        type:
+          - string
+        description: ''
+    package: '@azure/cosmos'
+  - uid: '@azure/cosmos.TimeoutError.Error'
+    name: Error
+    fullName: Error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'static Error: ErrorConstructor'
+      return:
+        type:
+          - ErrorConstructor
+        description: ''
+    package: '@azure/cosmos'
+  - uid: '@azure/cosmos.TimeoutError.message'
+    name: message
+    fullName: message
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'message: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: '@azure/cosmos'
+  - uid: '@azure/cosmos.TimeoutError.name'
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'name: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: '@azure/cosmos'
+  - uid: '@azure/cosmos.TimeoutError.stack'
+    name: stack
+    fullName: stack
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'stack?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: '@azure/cosmos'
+  - uid: '@azure/cosmos.TimeoutError.constructor'
+    name: TimeoutError(string)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'new TimeoutError(message?: string)'
+      parameters:
+        - id: message
+          type:
+            - string
+          description: ''
+          optional: true
+    package: '@azure/cosmos'

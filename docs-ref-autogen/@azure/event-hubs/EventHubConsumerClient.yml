@@ -78,7 +78,7 @@ items:
     type: property
     summary: The name of the default consumer group in the Event Hubs service.
     syntax:
-      content: 'static defaultConsumerGroupName: string'
+      content: 'static defaultConsumerGroupName: string = Constants.defaultConsumerGroup'
       return:
         type:
           - string
@@ -487,13 +487,12 @@ items:
       - typeScript
     summary: Provides the Event Hub runtime information.
     syntax:
-      content: 'function getEventHubProperties(options?: GetEventHubPropertiesOptions)'
+      content: 'function getEventHubProperties(options: GetEventHubPropertiesOptions)'
       parameters:
         - id: options
           type:
             - '@azure/event-hubs.GetEventHubPropertiesOptions'
           description: The set of options to apply to the operation call.
-          optional: true
       return:
         type:
           - Promise<@azure/event-hubs.EventHubProperties>
@@ -507,13 +506,12 @@ items:
       - typeScript
     summary: Provides the id for each partition associated with the Event Hub.
     syntax:
-      content: 'function getPartitionIds(options?: GetPartitionIdsOptions)'
+      content: 'function getPartitionIds(options: GetPartitionIdsOptions)'
       parameters:
         - id: options
           type:
             - '@azure/event-hubs.GetPartitionIdsOptions'
           description: The set of options to apply to the operation call.
-          optional: true
       return:
         type:
           - 'Promise<string[]>'
@@ -532,7 +530,7 @@ items:
     summary: Provides information about the state of the specified partition.
     syntax:
       content: >-
-        function getPartitionProperties(partitionId: string, options?:
+        function getPartitionProperties(partitionId: string, options:
         GetPartitionPropertiesOptions)
       parameters:
         - id: partitionId
@@ -543,7 +541,6 @@ items:
           type:
             - '@azure/event-hubs.GetPartitionPropertiesOptions'
           description: The set of options to apply to the operation call.
-          optional: true
       return:
         type:
           - Promise<@azure/event-hubs.PartitionProperties>

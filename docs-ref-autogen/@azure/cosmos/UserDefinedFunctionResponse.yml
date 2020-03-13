@@ -62,10 +62,10 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'headers: CosmosHeaders_2'
+      content: 'public headers: CosmosHeaders'
       return:
         type:
-          - '@azure/cosmos.CosmosHeaders_2'
+          - '@azure/cosmos.CosmosHeaders'
         description: ''
     package: '@azure/cosmos'
   - uid: '@azure/cosmos.UserDefinedFunctionResponse.requestCharge'
@@ -92,7 +92,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'resource: UserDefinedFunctionDefinition & Resource'
+      content: 'public resource: UserDefinedFunctionDefinition & Resource'
       return:
         type:
           - '@azure/cosmos.UserDefinedFunctionDefinition & @azure/cosmos.Resource'
@@ -107,7 +107,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'statusCode: StatusCode'
+      content: 'public statusCode: StatusCode'
       return:
         type:
           - StatusCode
@@ -123,7 +123,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'substatus?: SubStatusCode'
+      content: 'public substatus?: SubStatusCode'
       return:
         type:
           - '@azure/cosmos.SubStatusCode'
@@ -159,7 +159,7 @@ items:
       A reference to the <xref:UserDefinedFunction> corresponding to the
       returned <xref:UserDefinedFunctionDefinition>.
     syntax:
-      content: 'userDefinedFunction: UserDefinedFunction'
+      content: 'public userDefinedFunction: UserDefinedFunction'
       return:
         type:
           - '@azure/cosmos.UserDefinedFunction'
@@ -243,12 +243,6 @@ references:
       - name: UserDefinedFunction
         fullName: UserDefinedFunction
         uid: '@azure/cosmos.UserDefinedFunction'
-  - uid: '@azure/cosmos.CosmosHeaders_2'
-    name: CosmosHeaders_2
-    spec.typeScript:
-      - name: CosmosHeaders_2
-        fullName: CosmosHeaders_2
-        uid: '@azure/cosmos.CosmosHeaders_2'
   - uid: '@azure/cosmos.SubStatusCode'
     name: SubStatusCode
     spec.typeScript:

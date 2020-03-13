@@ -38,18 +38,18 @@ items:
             The message of this log.
     package: '@azure/core-http'
   - uid: '@azure/core-http.RequestPolicyOptions.constructor'
-    name: RequestPolicyOptions(HttpPipelineLogger | undefined)
+    name: RequestPolicyOptions(HttpPipelineLogger)
     children: []
     type: constructor
     langs:
       - typeScript
     summary: ''
     syntax:
-      content: 'new RequestPolicyOptions(_logger?: HttpPipelineLogger | undefined)'
+      content: 'new RequestPolicyOptions(_logger?: HttpPipelineLogger)'
       parameters:
         - id: _logger
           type:
-            - '@azure/core-http.HttpPipelineLogger | undefined'
+            - '@azure/core-http.HttpPipelineLogger'
           description: ''
           optional: true
     package: '@azure/core-http'
@@ -73,14 +73,12 @@ items:
         description: Whether or not a log with the provided log level should be logged.
     package: '@azure/core-http'
 references:
-  - uid: '@azure/core-http.HttpPipelineLogger | undefined'
-    name: HttpPipelineLogger | undefined
+  - uid: '@azure/core-http.HttpPipelineLogger'
+    name: HttpPipelineLogger
     spec.typeScript:
       - name: HttpPipelineLogger
         fullName: HttpPipelineLogger
         uid: '@azure/core-http.HttpPipelineLogger'
-      - name: ' | undefined'
-        fullName: ' | undefined'
   - uid: '@azure/core-http.HttpPipelineLogLevel'
     name: HttpPipelineLogLevel
     spec.typeScript:

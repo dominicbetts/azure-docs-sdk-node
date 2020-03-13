@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/cosmos.createAggregator'
+    name: createAggregator(AggregateType)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createAggregator(aggregateType: AggregateType)'
+      parameters:
+        - id: aggregateType
+          type:
+            - '@azure/cosmos.AggregateType'
+          description: ''
+      return:
+        type:
+          - >-
+            AverageAggregator | CountAggregator | MaxAggregator | MinAggregator
+            | SumAggregator | StaticValueAggregator
+        description: ''
+    package: '@azure/cosmos'
+references:
+  - uid: '@azure/cosmos.AggregateType'
+    name: AggregateType
+    spec.typeScript:
+      - name: AggregateType
+        fullName: AggregateType
+        uid: '@azure/cosmos.AggregateType'

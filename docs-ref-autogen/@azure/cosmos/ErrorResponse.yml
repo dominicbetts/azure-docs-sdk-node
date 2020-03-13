@@ -51,7 +51,7 @@ items:
       content: 'body?: ErrorBody'
       return:
         type:
-          - '@azure/cosmos.ErrorBody'
+          - ErrorBody
         description: ''
     package: '@azure/cosmos'
   - uid: '@azure/cosmos.ErrorResponse.code'
@@ -196,12 +196,6 @@ items:
         description: ''
     package: '@azure/cosmos'
 references:
-  - uid: '@azure/cosmos.ErrorBody'
-    name: ErrorBody
-    spec.typeScript:
-      - name: ErrorBody
-        fullName: ErrorBody
-        uid: '@azure/cosmos.ErrorBody'
   - uid: '@azure/cosmos.CosmosHeaders'
     name: CosmosHeaders
     spec.typeScript:

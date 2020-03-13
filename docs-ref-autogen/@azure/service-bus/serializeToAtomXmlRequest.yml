@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.serializeToAtomXmlRequest'
+    name: 'serializeToAtomXmlRequest(string, any)'
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Serializes input information to construct the Atom XML request
+    syntax:
+      content: 'function serializeToAtomXmlRequest(resourceName: string, resource: any)'
+      parameters:
+        - id: resourceName
+          type:
+            - string
+          description: Name of the resource to be serialized like `QueueDescription`
+        - id: resource
+          type:
+            - any
+          description: The entity details
+      return:
+        type:
+          - object
+        description: ''
+    package: '@azure/service-bus'

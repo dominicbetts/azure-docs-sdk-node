@@ -80,7 +80,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'requestCharge: number'
+      content: 'public requestCharge: number'
       return:
         type:
           - number
@@ -95,7 +95,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'static zero: ClientSideMetrics'
+      content: 'public static zero: ClientSideMetrics = new ClientSideMetrics(0)'
       return:
         type:
           - '@azure/cosmos.ClientSideMetrics'

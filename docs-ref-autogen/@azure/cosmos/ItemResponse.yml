@@ -59,10 +59,10 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'headers: CosmosHeaders_2'
+      content: 'public headers: CosmosHeaders'
       return:
         type:
-          - '@azure/cosmos.CosmosHeaders_2'
+          - '@azure/cosmos.CosmosHeaders'
         description: ''
     package: '@azure/cosmos'
   - uid: '@azure/cosmos.ItemResponse.item'
@@ -74,7 +74,7 @@ items:
     type: property
     summary: 'Reference to the <xref:Item> the response corresponds to.'
     syntax:
-      content: 'item: Item'
+      content: 'public item: Item'
       return:
         type:
           - '@azure/cosmos.Item'
@@ -137,7 +137,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'resource: T & Resource'
+      content: 'public resource: T & Resource'
       return:
         type:
           - T & @azure/cosmos.Resource
@@ -152,7 +152,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'statusCode: StatusCode'
+      content: 'public statusCode: StatusCode'
       return:
         type:
           - StatusCode
@@ -168,7 +168,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'substatus?: SubStatusCode'
+      content: 'public substatus?: SubStatusCode'
       return:
         type:
           - '@azure/cosmos.SubStatusCode'
@@ -208,12 +208,6 @@ references:
       - name: Item
         fullName: Item
         uid: '@azure/cosmos.Item'
-  - uid: '@azure/cosmos.CosmosHeaders_2'
-    name: CosmosHeaders_2
-    spec.typeScript:
-      - name: CosmosHeaders_2
-        fullName: CosmosHeaders_2
-        uid: '@azure/cosmos.CosmosHeaders_2'
   - uid: '@azure/cosmos.SubStatusCode'
     name: SubStatusCode
     spec.typeScript:

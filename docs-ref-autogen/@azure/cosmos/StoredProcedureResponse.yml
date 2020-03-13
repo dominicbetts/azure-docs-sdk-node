@@ -62,10 +62,10 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'headers: CosmosHeaders_2'
+      content: 'public headers: CosmosHeaders'
       return:
         type:
-          - '@azure/cosmos.CosmosHeaders_2'
+          - '@azure/cosmos.CosmosHeaders'
         description: ''
     package: '@azure/cosmos'
   - uid: '@azure/cosmos.StoredProcedureResponse.requestCharge'
@@ -92,7 +92,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'resource: StoredProcedureDefinition & Resource'
+      content: 'public resource: StoredProcedureDefinition & Resource'
       return:
         type:
           - '@azure/cosmos.StoredProcedureDefinition & @azure/cosmos.Resource'
@@ -126,7 +126,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'statusCode: StatusCode'
+      content: 'public statusCode: StatusCode'
       return:
         type:
           - StatusCode
@@ -143,7 +143,7 @@ items:
       A reference to the <xref:StoredProcedure> which the
       <xref:StoredProcedureDefinition> corresponds to.
     syntax:
-      content: 'storedProcedure: StoredProcedure'
+      content: 'public storedProcedure: StoredProcedure'
       return:
         type:
           - '@azure/cosmos.StoredProcedure'
@@ -191,7 +191,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'substatus?: SubStatusCode'
+      content: 'public substatus?: SubStatusCode'
       return:
         type:
           - '@azure/cosmos.SubStatusCode'
@@ -241,12 +241,6 @@ references:
       - name: StoredProcedure
         fullName: StoredProcedure
         uid: '@azure/cosmos.StoredProcedure'
-  - uid: '@azure/cosmos.CosmosHeaders_2'
-    name: CosmosHeaders_2
-    spec.typeScript:
-      - name: CosmosHeaders_2
-        fullName: CosmosHeaders_2
-        uid: '@azure/cosmos.CosmosHeaders_2'
   - uid: '@azure/cosmos.SubStatusCode'
     name: SubStatusCode
     spec.typeScript:

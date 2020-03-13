@@ -1,0 +1,36 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@azure/service-bus.getRawSqlParameters'
+    name: 'getRawSqlParameters(SqlParameter[] | undefined)'
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      @ignore
+
+      Helper utility to extract array of `RawSqlParameter` instances from given
+      input,
+
+      or undefined if not passed in.
+    syntax:
+      content: 'function getRawSqlParameters(parameters: SqlParameter[] | undefined)'
+      parameters:
+        - id: parameters
+          type:
+            - '@azure/service-bus.SqlParameter[] | undefined'
+          description: ''
+      return:
+        type:
+          - any
+        description: ''
+    package: '@azure/service-bus'
+references:
+  - uid: '@azure/service-bus.SqlParameter[] | undefined'
+    name: 'SqlParameter[] | undefined'
+    spec.typeScript:
+      - name: SqlParameter
+        fullName: SqlParameter
+        uid: '@azure/service-bus.SqlParameter'
+      - name: '[] | undefined'
+        fullName: '[] | undefined'

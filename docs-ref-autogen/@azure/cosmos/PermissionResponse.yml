@@ -61,10 +61,10 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'headers: CosmosHeaders_2'
+      content: 'public headers: CosmosHeaders'
       return:
         type:
-          - '@azure/cosmos.CosmosHeaders_2'
+          - '@azure/cosmos.CosmosHeaders'
         description: ''
     package: '@azure/cosmos'
   - uid: '@azure/cosmos.PermissionResponse.permission'
@@ -78,7 +78,7 @@ items:
       A reference to the <xref:Permission> corresponding to the returned
       <xref:PermissionDefinition>.
     syntax:
-      content: 'permission: Permission'
+      content: 'public permission: Permission'
       return:
         type:
           - '@azure/cosmos.Permission'
@@ -142,7 +142,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'resource: PermissionDefinition & PermissionBody & Resource'
+      content: 'public resource: PermissionDefinition & PermissionBody & Resource'
       return:
         type:
           - >-
@@ -159,7 +159,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'statusCode: StatusCode'
+      content: 'public statusCode: StatusCode'
       return:
         type:
           - StatusCode
@@ -175,7 +175,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'substatus?: SubStatusCode'
+      content: 'public substatus?: SubStatusCode'
       return:
         type:
           - '@azure/cosmos.SubStatusCode'
@@ -237,12 +237,6 @@ references:
       - name: Permission
         fullName: Permission
         uid: '@azure/cosmos.Permission'
-  - uid: '@azure/cosmos.CosmosHeaders_2'
-    name: CosmosHeaders_2
-    spec.typeScript:
-      - name: CosmosHeaders_2
-        fullName: CosmosHeaders_2
-        uid: '@azure/cosmos.CosmosHeaders_2'
   - uid: '@azure/cosmos.SubStatusCode'
     name: SubStatusCode
     spec.typeScript:
