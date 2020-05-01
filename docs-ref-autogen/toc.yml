@@ -67214,6 +67214,9 @@
         - uid: azuremediaplayer.amp.Player
           name: Player
           items:
+            - uid: azuremediaplayer.amp.Player.addEventListener
+              name: addEventListener
+              items: []
             - uid: azuremediaplayer.amp.Player.AudioTracksMenu
               name: AudioTracksMenu
               items: []
