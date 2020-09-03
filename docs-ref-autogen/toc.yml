@@ -8099,6 +8099,9 @@
     - uid: '@azure/arm-automation.NodeReportsListByNodeResponse'
       name: NodeReportsListByNodeResponse
       items: []
+    - uid: '@azure/arm-automation.NonAzureQueryProperties'
+      name: NonAzureQueryProperties
+      items: []
     - uid: '@azure/arm-automation.ObjectDataTypes'
       name: ObjectDataTypes
       items: []
@@ -17575,6 +17578,9 @@
     - uid: '@azure/arm-datafactory.AzureFileStorageReadSettings'
       name: AzureFileStorageReadSettings
       items: []
+    - uid: '@azure/arm-datafactory.AzureFileStorageWriteSettings'
+      name: AzureFileStorageWriteSettings
+      items: []
     - uid: '@azure/arm-datafactory.AzureFunctionActivity'
       name: AzureFunctionActivity
       items: []
@@ -17769,6 +17775,9 @@
       items: []
     - uid: '@azure/arm-datafactory.ConcurSource'
       name: ConcurSource
+      items: []
+    - uid: '@azure/arm-datafactory.ConnectionStateProperties'
+      name: ConnectionStateProperties
       items: []
     - uid: '@azure/arm-datafactory.ControlActivity'
       name: ControlActivity
@@ -18214,11 +18223,21 @@
     - uid: '@azure/arm-datafactory.ExposureControl'
       name: ExposureControl
       items: []
+    - uid: '@azure/arm-datafactory.ExposureControlBatchRequest'
+      name: ExposureControlBatchRequest
+      items: []
+    - uid: '@azure/arm-datafactory.ExposureControlBatchResponse'
+      name: ExposureControlBatchResponse
+      items: []
     - uid: '@azure/arm-datafactory.ExposureControlGetFeatureValueByFactoryResponse'
       name: ExposureControlGetFeatureValueByFactoryResponse
       items: []
     - uid: '@azure/arm-datafactory.ExposureControlGetFeatureValueResponse'
       name: ExposureControlGetFeatureValueResponse
+      items: []
+    - uid: >-
+        @azure/arm-datafactory.ExposureControlQueryFeatureValuesByFactoryResponse
+      name: ExposureControlQueryFeatureValuesByFactoryResponse
       items: []
     - uid: '@azure/arm-datafactory.ExposureControlRequest'
       name: ExposureControlRequest
@@ -18830,6 +18849,68 @@
       items: []
     - uid: '@azure/arm-datafactory.ManagedIntegrationRuntimeStatus'
       name: ManagedIntegrationRuntimeStatus
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedPrivateEndpoint'
+      name: ManagedPrivateEndpoint
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedPrivateEndpointListResponse'
+      name: ManagedPrivateEndpointListResponse
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedPrivateEndpointResource'
+      name: ManagedPrivateEndpointResource
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedPrivateEndpoints'
+      name: ManagedPrivateEndpoints
+      items: []
+    - uid: >-
+        @azure/arm-datafactory.ManagedPrivateEndpointsCreateOrUpdateOptionalParams
+      name: ManagedPrivateEndpointsCreateOrUpdateOptionalParams
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedPrivateEndpointsCreateOrUpdateResponse'
+      name: ManagedPrivateEndpointsCreateOrUpdateResponse
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedPrivateEndpointsGetOptionalParams'
+      name: ManagedPrivateEndpointsGetOptionalParams
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedPrivateEndpointsGetResponse'
+      name: ManagedPrivateEndpointsGetResponse
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedPrivateEndpointsListByFactoryNextResponse'
+      name: ManagedPrivateEndpointsListByFactoryNextResponse
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedPrivateEndpointsListByFactoryResponse'
+      name: ManagedPrivateEndpointsListByFactoryResponse
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedVirtualNetwork'
+      name: ManagedVirtualNetwork
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedVirtualNetworkListResponse'
+      name: ManagedVirtualNetworkListResponse
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedVirtualNetworkResource'
+      name: ManagedVirtualNetworkResource
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedVirtualNetworks'
+      name: ManagedVirtualNetworks
+      items: []
+    - uid: >-
+        @azure/arm-datafactory.ManagedVirtualNetworksCreateOrUpdateOptionalParams
+      name: ManagedVirtualNetworksCreateOrUpdateOptionalParams
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedVirtualNetworksCreateOrUpdateResponse'
+      name: ManagedVirtualNetworksCreateOrUpdateResponse
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedVirtualNetworksGetOptionalParams'
+      name: ManagedVirtualNetworksGetOptionalParams
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedVirtualNetworksGetResponse'
+      name: ManagedVirtualNetworksGetResponse
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedVirtualNetworksListByFactoryNextResponse'
+      name: ManagedVirtualNetworksListByFactoryNextResponse
+      items: []
+    - uid: '@azure/arm-datafactory.ManagedVirtualNetworksListByFactoryResponse'
+      name: ManagedVirtualNetworksListByFactoryResponse
       items: []
     - uid: '@azure/arm-datafactory.MappingDataFlow'
       name: MappingDataFlow
@@ -49174,14 +49255,32 @@
     - uid: '@azure/arm-storage.ListContainerItems'
       name: ListContainerItems
       items: []
+    - uid: '@azure/arm-storage.ListContainersInclude'
+      name: ListContainersInclude
+      items: []
     - uid: '@azure/arm-storage.ListKeyExpand'
       name: ListKeyExpand
+      items: []
+    - uid: '@azure/arm-storage.ListQueue'
+      name: ListQueue
+      items: []
+    - uid: '@azure/arm-storage.ListQueueResource'
+      name: ListQueueResource
+      items: []
+    - uid: '@azure/arm-storage.ListQueueServices'
+      name: ListQueueServices
       items: []
     - uid: '@azure/arm-storage.ListServiceSasResponse'
       name: ListServiceSasResponse
       items: []
     - uid: '@azure/arm-storage.ListSharesExpand'
       name: ListSharesExpand
+      items: []
+    - uid: '@azure/arm-storage.ListTableResource'
+      name: ListTableResource
+      items: []
+    - uid: '@azure/arm-storage.ListTableServices'
+      name: ListTableServices
       items: []
     - uid: '@azure/arm-storage.ManagementPolicies'
       name: ManagementPolicies
@@ -49218,6 +49317,9 @@
       items: []
     - uid: '@azure/arm-storage.MetricSpecification'
       name: MetricSpecification
+      items: []
+    - uid: '@azure/arm-storage.MinimumTlsVersion'
+      name: MinimumTlsVersion
       items: []
     - uid: '@azure/arm-storage.NetworkRuleSet'
       name: NetworkRuleSet
@@ -49314,6 +49416,51 @@
       items: []
     - uid: '@azure/arm-storage.PublicAccess'
       name: PublicAccess
+      items: []
+    - uid: '@azure/arm-storage.Queue'
+      name: Queue
+      items: []
+    - uid: '@azure/arm-storage.QueueCreateOptionalParams'
+      name: QueueCreateOptionalParams
+      items: []
+    - uid: '@azure/arm-storage.QueueCreateResponse'
+      name: QueueCreateResponse
+      items: []
+    - uid: '@azure/arm-storage.QueueGetResponse'
+      name: QueueGetResponse
+      items: []
+    - uid: '@azure/arm-storage.QueueListNextResponse'
+      name: QueueListNextResponse
+      items: []
+    - uid: '@azure/arm-storage.QueueListOptionalParams'
+      name: QueueListOptionalParams
+      items: []
+    - uid: '@azure/arm-storage.QueueListResponse'
+      name: QueueListResponse
+      items: []
+    - uid: '@azure/arm-storage.QueueServiceProperties'
+      name: QueueServiceProperties
+      items: []
+    - uid: '@azure/arm-storage.QueueServices'
+      name: QueueServices
+      items: []
+    - uid: '@azure/arm-storage.QueueServicesGetServicePropertiesResponse'
+      name: QueueServicesGetServicePropertiesResponse
+      items: []
+    - uid: '@azure/arm-storage.QueueServicesListResponse'
+      name: QueueServicesListResponse
+      items: []
+    - uid: '@azure/arm-storage.QueueServicesSetServicePropertiesOptionalParams'
+      name: QueueServicesSetServicePropertiesOptionalParams
+      items: []
+    - uid: '@azure/arm-storage.QueueServicesSetServicePropertiesResponse'
+      name: QueueServicesSetServicePropertiesResponse
+      items: []
+    - uid: '@azure/arm-storage.QueueUpdateOptionalParams'
+      name: QueueUpdateOptionalParams
+      items: []
+    - uid: '@azure/arm-storage.QueueUpdateResponse'
+      name: QueueUpdateResponse
       items: []
     - uid: '@azure/arm-storage.Reason'
       name: Reason
@@ -49474,8 +49621,50 @@
     - uid: '@azure/arm-storage.StorageManagementClientOptions'
       name: StorageManagementClientOptions
       items: []
+    - uid: '@azure/arm-storage.StorageQueue'
+      name: StorageQueue
+      items: []
     - uid: '@azure/arm-storage.StorageSkuListResult'
       name: StorageSkuListResult
+      items: []
+    - uid: '@azure/arm-storage.Table'
+      name: Table
+      items: []
+    - uid: '@azure/arm-storage.TableCreateResponse'
+      name: TableCreateResponse
+      items: []
+    - uid: '@azure/arm-storage.TableGetResponse'
+      name: TableGetResponse
+      items: []
+    - uid: '@azure/arm-storage.TableListNextResponse'
+      name: TableListNextResponse
+      items: []
+    - uid: '@azure/arm-storage.TableListResponse'
+      name: TableListResponse
+      items: []
+    - uid: '@azure/arm-storage.TableOperations'
+      name: TableOperations
+      items: []
+    - uid: '@azure/arm-storage.TableServiceProperties'
+      name: TableServiceProperties
+      items: []
+    - uid: '@azure/arm-storage.TableServices'
+      name: TableServices
+      items: []
+    - uid: '@azure/arm-storage.TableServicesGetServicePropertiesResponse'
+      name: TableServicesGetServicePropertiesResponse
+      items: []
+    - uid: '@azure/arm-storage.TableServicesListResponse'
+      name: TableServicesListResponse
+      items: []
+    - uid: '@azure/arm-storage.TableServicesSetServicePropertiesOptionalParams'
+      name: TableServicesSetServicePropertiesOptionalParams
+      items: []
+    - uid: '@azure/arm-storage.TableServicesSetServicePropertiesResponse'
+      name: TableServicesSetServicePropertiesResponse
+      items: []
+    - uid: '@azure/arm-storage.TableUpdateResponse'
+      name: TableUpdateResponse
       items: []
     - uid: '@azure/arm-storage.TagFilter'
       name: TagFilter
@@ -61617,6 +61806,9 @@
     - uid: '@azure/core-http.AccessTokenCache'
       name: AccessTokenCache
       items: []
+    - uid: '@azure/core-http.AccessTokenRefresher'
+      name: AccessTokenRefresher
+      items: []
     - uid: '@azure/core-http.ApiKeyCredentialOptions'
       name: ApiKeyCredentialOptions
       items: []
@@ -62073,6 +62265,9 @@
     - uid: '@azure/cosmos.CreateOperation'
       name: CreateOperation
       items: []
+    - uid: '@azure/cosmos.CreateOperationInput'
+      name: CreateOperationInput
+      items: []
     - uid: '@azure/cosmos.Database'
       name: Database
       items: []
@@ -62096,6 +62291,9 @@
       items: []
     - uid: '@azure/cosmos.DeleteOperation'
       name: DeleteOperation
+      items: []
+    - uid: '@azure/cosmos.DeleteOperationInput'
+      name: DeleteOperationInput
       items: []
     - uid: '@azure/cosmos.ErrorBody'
       name: ErrorBody
@@ -62220,8 +62418,14 @@
     - uid: '@azure/cosmos.ReadOperation'
       name: ReadOperation
       items: []
+    - uid: '@azure/cosmos.ReadOperationInput'
+      name: ReadOperationInput
+      items: []
     - uid: '@azure/cosmos.ReplaceOperation'
       name: ReplaceOperation
+      items: []
+    - uid: '@azure/cosmos.ReplaceOperationInput'
+      name: ReplaceOperationInput
       items: []
     - uid: '@azure/cosmos.RequestOptions'
       name: RequestOptions
@@ -62300,6 +62504,9 @@
       items: []
     - uid: '@azure/cosmos.UpsertOperation'
       name: UpsertOperation
+      items: []
+    - uid: '@azure/cosmos.UpsertOperationInput'
+      name: UpsertOperationInput
       items: []
     - uid: '@azure/cosmos.User'
       name: User
